@@ -1,0 +1,16 @@
+--- 
+title: "STAT 764 - Spring 2024"
+author: "Valentina M. Pereyra Picabea"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+# url: your book url like https://bookdown.org/yihui/bookdown
+# cover-image: path to the social sharing image like images/cover.jpg
+description:
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+---
+
+This is a bookdown project containing the daily journals of STAT 764,
+  and the activities 1, 2, and 3 at the end of the document.

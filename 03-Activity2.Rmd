@@ -1,0 +1,279 @@
+
+# Elevation data of Experiment plot in North Agronomy Farm
+
+The goal of this activity is to visualize the elevation data of an experimental site in the North Agronomy Farm at Kansas State University. Also my goal is to predict elevation with different models and infer at what location we observe the lowest and highest elevation point.
+
+## Librarires
+
+```{r message=FALSE, warning=FALSE}
+library(sf)
+library(sp)
+library(raster)
+library(tidyverse)
+```
+
+## Kansas boundary
+
+```{r message=FALSE, warning=FALSE}
+# Download shapefile of Kansas from census.gov
+download.file("http://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_us_state_20m.zip", destfile = "states.zip")
+unzip("states.zip")
+sf.us <- st_read("cb_2015_us_state_20m.shp")
+sf.kansas <- sf.us[48,6]
+sf.kansas <- as(sf.kansas, 'Spatial')
+plot(sf.kansas,main="",col="white")
+
+```
+
+## My data: North Agronomy Farm
+
+```{r fig.keep=2:4, message=FALSE, warning=FALSE}
+# Make shapefile of study area around Manhattan KS
+url <- "https://www.dropbox.com/scl/fi/b7d9254b8f26mhu6pc2km/Experiment_walk.gpx?rlkey=nmph96rzfz8rxmwxsxg3wn4p1&dl=1"
+pt.study.area <- st_read(dsn=url,layer="track_points")
+sf.study.area  <- st_polygon(list(rbind(st_coordinates(pt.study.area),st_coordinates(pt.study.area)[1,])))
+sf.study.area <- st_buffer(sf.study.area, .00006)
+sf.study.area <- st_sf(st_sfc(sf.study.area), crs = crs(sf.kansas))
+
+# Kansas + North farm data
+{plot(sf.kansas,main="",col="white",xlim=c(-102.0517,-94.59193),ylim=c(36.99308,40.00308))
+plot(sf.study.area, add=TRUE, col="red")}
+
+```
+
+## Extract elevation
+
+```{r message=FALSE, warning=FALSE}
+url <- "https://www.dropbox.com/scl/fi/b7d9254b8f26mhu6pc2km/Experiment_walk.gpx?rlkey=nmph96rzfz8rxmwxsxg3wn4p1&dl=1"
+
+pt.elev <- st_read(dsn=url,layer="track_points")
+pt.elev <- pt.elev[,4] # Keep only elevation
+pt.elev <- pt.elev[-c(1:15),]
+#pt.elev <- rbind(pt.elev,pt.study.area[,4])
+```
+
+## Visualize boundary + elevation
+
+```{r}
+{plot(sf.study.area)
+plot(pt.elev,add=TRUE)}
+hist(pt.elev$ele,col="grey")
+summary(pt.elev$ele)
+
+ggplot() +
+  geom_sf(data=sf.study.area) +
+  labs(subtitle = "North Agronomy Farm")+
+  geom_sf(data=pt.elev, aes(color = ele), size = 2)+
+  scale_color_gradient(low="blue", high="red", name = "Elevation (m)")+
+  theme(panel.background = element_blank(),
+        axis.text = element_blank())
+# Visualize with satelite image 
+mapview::mapview(sf.study.area)  
+
+```
+
+```{r}
+# Transform pointfiles and shapefiles to utm zone to a planar coordinate reference system
+pt.elev.utm <- st_transform(pt.elev,CRS("+proj=utm +zone=14 +datum=WGS84  +units=m"))
+sf.study.area.utm <- st_transform(sf.study.area,CRS("+proj=utm +zone=14 +datum=WGS84  +units=m"))
+```
+
+```{r}
+# Make data.frame for statistical analysis
+df.elev <- data.frame (elev = pt.elev$ele,
+                       long = st_coordinates(pt.elev)[,1],
+                       lat = st_coordinates(pt.elev)[,2],
+                       s1 = st_coordinates(pt.elev.utm)[,1],
+                       s2 = st_coordinates(pt.elev.utm)[,2])
+```
+
+## Models
+
+### 1. Linear with iid errors
+
+```{r}
+# Statistical analysis 1: non-hierarchical linear model with iid errors
+m1 <- lm(elev~s1+I(s1^2)+s2+I(s2^2),data=df.elev)
+# Make raster of study area to be able to map predictions from m1
+rl.E.y_lin <- raster(,nrow=100,ncols=100,ext=extent(sf.study.area.utm),crs=crs(sf.study.area.utm))
+# Make data.frame to be able to make predictions at each pixel (cell of raster)
+df.pred <- data.frame(elev = NA,
+                      s1 = xyFromCell(rl.E.y_lin,cell=1:length(rl.E.y_lin[]))[,1],
+                      s2 = xyFromCell(rl.E.y_lin,cell=1:length(rl.E.y_lin[]))[,2])
+
+# Make spatial predictions at each pixel
+df.pred$elev <- predict(m1,df.pred[,2:3])
+
+# View first 6 rows of predictions
+head(df.pred) 
+
+# Fill raster file with predictions 
+rl.E.y_lin[] <- c(df.pred$elev)
+
+rl.E.y_lin <- mask(rl.E.y_lin,sf.study.area.utm)
+
+# Estimate coordinates and amount of maximum elevation
+xyFromCell(rl.E.y_lin,cell=which.max(rl.E.y_lin[]))
+
+rl.E.y_lin[which.max(rl.E.y_lin[])]
+
+# Plot estimate coordinates of maximum elevation
+{plot(rl.E.y_lin, main = "Linear with iid errors") # Plot map of predictions
+plot(sf.study.area.utm,add=TRUE)
+points(xyFromCell(rl.E.y_lin,cell=which.max(rl.E.y_lin[])),col="purple",pch="*",cex=3)
+points(xyFromCell(rl.E.y_lin,cell=which.min(rl.E.y_lin[])),col="blue",pch="*",cex=3)}
+
+```
+
+### 2. GAM
+
+```{r message=FALSE, warning=FALSE}
+# Try low-rank Gaussian process (i.e., modern kriging model)
+library(mgcv)
+m1 <- gam(elev~s(s1,s2,bs="gp"),data=df.elev)
+
+# Make raster of study area to be able to map predictions from m1
+rl.E.y_gam <- raster(,nrow=100,ncols=100,ext=extent(sf.study.area.utm),crs=crs(sf.study.area.utm))
+# Make data.frame to be able to make predictions at each pixel (cell of raster)
+df.pred <- data.frame(elev = NA,
+                      s1 = xyFromCell(rl.E.y_gam,cell=1:length(rl.E.y_gam[]))[,1],
+                      s2 = xyFromCell(rl.E.y_gam,cell=1:length(rl.E.y_gam[]))[,2])
+
+# Make spatial predictions at each pixel
+df.pred$elev <- predict(m1,df.pred[,2:3])
+
+# View first 6 rows of predictions
+head(df.pred) 
+
+# Fill raster file with predictions 
+rl.E.y_gam[] <- c(df.pred$elev)
+
+rl.E.y_gam <- mask(rl.E.y_gam,sf.study.area.utm)
+
+# Estimate coordinates and amount of maximum elevation
+xyFromCell(rl.E.y_gam,cell=which.max(rl.E.y_gam[]))
+
+rl.E.y_gam[which.max(rl.E.y_gam[])]
+
+# Plot estimate coordinates of maximum elevation
+{plot(rl.E.y_gam, main = "Generalized additive model") # Plot map of predictions
+plot(sf.study.area.utm,add=TRUE)
+points(xyFromCell(rl.E.y_gam,cell=which.max(rl.E.y_gam[])),col="purple",pch="*",cex=3)
+points(xyFromCell(rl.E.y_lin,cell=which.min(rl.E.y_lin[])),col="blue",pch="*",cex=3)}
+
+```
+
+### 3. Regression tree
+
+```{r}
+# Try a regression tree instead!
+library(rpart)
+m1 <- rpart(elev~s1+s2,data=df.elev)
+
+# Make raster of study area to be able to map predictions from m1
+rl.E.y_rt <- raster(,nrow=100,ncols=100,ext=extent(sf.study.area.utm),crs=crs(sf.study.area.utm))
+# Make data.frame to be able to make predictions at each pixel (cell of raster)
+df.pred <- data.frame(elev = NA,
+                      s1 = xyFromCell(rl.E.y_rt,cell=1:length(rl.E.y_rt[]))[,1],
+                      s2 = xyFromCell(rl.E.y_rt,cell=1:length(rl.E.y_rt[]))[,2])
+
+# Make spatial predictions at each pixel
+df.pred$elev <- predict(m1,df.pred[,2:3])
+
+# View first 6 rows of predictions
+head(df.pred) 
+
+# Fill raster file with predictions 
+rl.E.y_rt[] <- c(df.pred$elev)
+
+rl.E.y_rt <- mask(rl.E.y_rt,sf.study.area.utm)
+
+# Estimate coordinates and amount of maximum elevation
+xyFromCell(rl.E.y_rt,cell=which.max(rl.E.y_rt[]))
+
+rl.E.y_rt[which.max(rl.E.y_rt[])]
+
+# Plot estimate coordinates of maximum elevation
+{plot(rl.E.y_rt, main = "Regression tree") # Plot map of predictions
+plot(sf.study.area.utm,add=TRUE)
+points(xyFromCell(rl.E.y_rt,cell=which.max(rl.E.y_rt[])),col="purple",pch="*",cex=3)
+points(xyFromCell(rl.E.y_lin,cell=which.min(rl.E.y_lin[])),col="blue",pch="*",cex=3)}
+
+```
+
+### 4. Support vector regression
+
+```{r message=FALSE, warning=FALSE}
+# Try support vector regression (or machine)!
+library(e1071)
+m1 <- svm(elev~s1+s2,data=df.elev)
+
+# Make raster of study area to be able to map predictions from m1
+rl.E.y_svr <- raster(,nrow=100,ncols=100,ext=extent(sf.study.area.utm),crs=crs(sf.study.area.utm))
+# Make data.frame to be able to make predictions at each pixel (cell of raster)
+df.pred <- data.frame(elev = NA,
+                      s1 = xyFromCell(rl.E.y_svr,cell=1:length(rl.E.y_svr[]))[,1],
+                      s2 = xyFromCell(rl.E.y_svr,cell=1:length(rl.E.y_svr[]))[,2])
+
+# Make spatial predictions at each pixel
+df.pred$elev <- predict(m1,df.pred[,2:3])
+
+# View first 6 rows of predictions
+head(df.pred) 
+
+# Fill raster file with predictions 
+rl.E.y_svr[] <- c(df.pred$elev)
+
+rl.E.y_svr <- mask(rl.E.y_svr,sf.study.area.utm)
+
+# Estimate coordinates and amount of maximum elevation
+xyFromCell(rl.E.y_svr,cell=which.max(rl.E.y_svr[]))
+
+rl.E.y_svr[which.max(rl.E.y_svr[])]
+
+# Plot estimate coordinates of maximum elevation
+{plot(rl.E.y_svr, main = "Support vector regression") # Plot map of predictions
+plot(sf.study.area.utm,add=TRUE)
+points(xyFromCell(rl.E.y_svr,cell=which.max(rl.E.y_svr[])),col="purple",pch="*",cex=3)
+points(xyFromCell(rl.E.y_lin,cell=which.min(rl.E.y_lin[])),col="blue",pch="*",cex=3)}
+
+```
+
+### 5. Boosted regession tree
+
+```{r message=FALSE, warning=FALSE}
+# Try boosted regression tree!
+library(gbm)
+m1 <- gbm(elev~s1+s2,data=df.elev)
+
+# Make raster of study area to be able to map predictions from m1
+rl.E.y_gbm <- raster(,nrow=100,ncols=100,ext=extent(sf.study.area.utm),crs=crs(sf.study.area.utm))
+# Make data.frame to be able to make predictions at each pixel (cell of raster)
+df.pred <- data.frame(elev = NA,
+                      s1 = xyFromCell(rl.E.y_gbm,cell=1:length(rl.E.y_gbm[]))[,1],
+                      s2 = xyFromCell(rl.E.y_gbm,cell=1:length(rl.E.y_gbm[]))[,2])
+
+# Make spatial predictions at each pixel
+df.pred$elev <- predict(m1,df.pred[,2:3])
+
+# View first 6 rows of predictions
+head(df.pred) 
+
+# Fill raster file with predictions 
+rl.E.y_gbm[] <- c(df.pred$elev)
+
+rl.E.y_gbm <- mask(rl.E.y_gbm,sf.study.area.utm)
+
+# Estimate coordinates and amount of maximum elevation
+xyFromCell(rl.E.y_gbm,cell=which.max(rl.E.y_gbm[]))
+
+rl.E.y_gbm[which.max(rl.E.y_gbm[])]
+
+# Plot estimate coordinates of maximum elevation
+{plot(rl.E.y_gbm, main = "Boosted regression tree") # Plot map of predictions
+plot(sf.study.area.utm,add=TRUE)
+points(xyFromCell(rl.E.y_gbm,cell=which.max(rl.E.y_gbm[])),col="purple",pch="*",cex=3)
+points(xyFromCell(rl.E.y_lin,cell=which.min(rl.E.y_lin[])),col="blue",pch="*",cex=3)}
+
+```
+

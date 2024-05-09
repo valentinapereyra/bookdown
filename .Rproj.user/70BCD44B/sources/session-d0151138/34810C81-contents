@@ -1,0 +1,384 @@
+# Daily journals
+
+## January 18
+
+Today in class I, learned that spatiotemporal statistics is a relatively new field of study with not much bibliography around (~4 books) and that K-State is one of the few universities that teaches a class like this, leading to students with competitive skills for the job market. In addition, I learned that land grant universities were important for the development of statistics as they usually started a stat department close to their initiation (+ points for the Midwest).\
+\
+I didn't understand really well if we should do something with the **Activity** assignment for the next class. The rest was really clear.\
+\
+I think this idea of journaling each class is amazing; for me, it works really well the exercise of writing down (instead of wondering about ideas in my mind) what I learned/what I didn't understand to know where I need to head.
+
+
+## January 25
+
+Yesterday in class I learned about some approaches for modeling human movement data, collected with a smartwatch every ~4 seconds. Of all of them, any was able to model more or less accurately the movement in space and time in a way that would result useful for using in the future. A polynomial function is not able to model sharp edges and will tend to do an oval ellipse. A generalized additive model with a low rank Gaussian process can approach the path of the movement better but is still not precise. Lastly, we tried a regression tree with a cp = 0.0001, this model was able to follow the path of the movement accurately but because of the nature of a regression tree, the time is not modeled right because it has stationary moments and sudden jumps. All of them had a high R$^2$ (>0.9) which could be considered a sign of overfitting, but it was not the case for this kind of data.\
+\
+I'm curious about learning what models can be used for human movement data that needs really accurate and precise trajectories.
+
+## January 30
+
+Today in class, I learned about a new model called model base partitioning (mob) to improve the model of human movement (marathon). Mob can split the data set and obtain multiple linear regressions in a segmented way, following the observed data rigorously. A disadvantage of the mob is that the lines of each model are not connected, ending up with a more realistic representation than the regression tree, but still not close to reality. We could improve the representation of reality using the mob model by adding assumptions to join the edges of the lines on a continuous.\
+\
+This was my first time hearing about model base partitioning, so I struggled to understand the differences with a regression tree. Visually, the difference is clear, but I would like to know how it partitions the data into so many small datasets and finds the "best" model to fit, either a mean, monomial, or polynomial.\
+\
+Also, when we saw the error associated with your marathon position, I wondered about the error that Google Earth has. When we see a sidewalk in the image and get the coordinates right there, can we be sure that it is the sidewalk, or maybe that coordinate is the street? I think we would have no other option but to ignore it, but I was wondering if we should be aware it exists.
+
+## February 1
+
+Last Friday in class, we discussed whether removing outliers from our data is a safe (or smart) practice to do. We recalled that it is almost always not "good" to do it because it can fall into data manipulation. We are usually not sure what really happened to that observation, so it is a practice of honesty in our research to work with the data as it is and to make inferences, always reporting confidence and prediction (this most important) intervals apart from the expected values. We also differentiated between a mathematical and a statistical model, with the latter being a math model + assumptions about the data-generating process using PDF or PMFs. We use statistical models for making predictions (within the range of observed data), forecasts (future data not observed), and hindcasts (past data not observed) and for quantifying and communicating the uncertainty associated. We also differentiated between confidence intervals as the uncertainty around the expected value of the parameters, and prediction intervals, which contain the uncertainty about the individual values that can be observed. So, prediction intervals will always be wider than confidence intervals (mainly in forecast and hindcast) and more important to report.\
+\
+Something I'm curious about is whether confidence intervals are useful in forecast and hindcast. I always recall learning about prediction intervals for these situations, but I don't know how useful or important confidence intervals can be.\
+\
+I understand this journal from February 1st is past due, and I wanted to share it with the journal of today.
+
+## February 6
+
+Today in class, we reviewed some theories of probability density and mass functions (PDF and PMF, respectively), mainly for the normal distribution since it has been the most used historically. We recalled why probability distribution is so important for statistics, as the assumptions we state about them are needed to make inferences about the data-generating process (model). We drew samples (random deviates) from a normal PDF and generated a histogram and density functions to represent it visually. Something I hadn't done before was to create a custom function in R for a PDF and for obtaining random variables from it.\
+\
+We also recalled that maximum likelihood estimation gives unbiased estimates of a parameter but questioned that we may not always want unbiased estimates. Here, I struggle to understand in which situations we may or may not want unbiased estimates and why. Also, at the end of the class, when you introduced difference and differential equations we learned that the first treats time as discrete and the latter as continuous, and that differential equations are built upon difference equations (if I got it right). I'm curious whether we may need just a difference equation for a model that uses time as discrete, or if we will always use them to build a differential equation with time as continuous.\
+
+$y_i = \beta_0 + \beta_1x_i+\epsilon_i$ model
+$y_i ~ N(\mu_i,\sigma^2_i)$ expected value + variance term
+\
+
+link function for the variance $\sigma^2 = \epsilon^{\alpha_0+\alpha_1x_i}$
+
+Normal distribution:\
+Bracket notation for PDF\
+Integral to solve expected value, usually is not possible so methods available to do in computer\
+historically, derivatives of the normal distribution works really well to achieve the ls\
+Then computers: every is accessible, no point of keep choosing the normal distribution.\
+-rnorm() generate a sample from a normal distribution with certain expected value (not a mean), expected value is an integral. Plus the standard deviation, sq root of sigma.\
+
+Axis labels: name correctly for showing a histogram: is a pdf, is not a count, is density, in hist(freq = F).\
+\
+Name a distribution pdf, name its moments: should be basic skills.\
+\
+# Maximum likelihood estimation: estimate parameters from a statistical model, the best ever, works well in most situation, sucks only at small sample size.\
+least squares: not pdf associated, just a mathematical function.\
+\
+*MLE: unbiased estimates, many times we want biased estimates (why we would like biased estimates?, ask this in the journal)*\
+\
+See STATS package from R for more information.\
+\
+Other distributions:\
+tweedy distribution? for rain\
+\
+We can make our own functions for a PDF: see web.\
+\
+# Moments of a distirbution:
+
+-First moment: expected value\
+-Second central moment: variance\
+-Third moment: skewness\
+
+**Math model review:**
+
+Differential equations: dynamical systems: they have time in them. Time as continuous\ 
+Difference equations: discrete time version of differential equations. Time as discrete\
+*When would you use one on another? ask in journal.\
+\
+Partial differential equations: use space and time! we use a difference equation anyway
+
+
+## February 8
+
+Today we learned that the main difference between spatio-temporal data and the rest is that location and date (most of the times) should be measured. Spatio-temporal data is useful not only to predict location, there's data that needs location and time to be useful such as temperature and rainfall where we might use location and time as the predictor variables. So we are not interested in predicting location here but to use it as a explanatory variable.\
+\
+We also differentiated between a model and an equation, a model is an equation that corresponds to something more or less real.
+We recall that difference and differential equations use time as discrete and continuous, respectively.
+Differential are difficult to understand and usually we need proficient knowledge of mathematics to work with them. Difference equations are more easy to use and to come up with an equation.\
+\
+I also learned about agent-based models, they are simulation models that tend to be used without having data and resembles a video game. For example, they can study how to evacuate a building if it gets on fire where we can make assumptions such as: 90% of the people will stay calm, 10% will freak out and complicate the exit doors.\
+\
+Whooping crane example: when the population will be larger than 1000 individuals. They got sued because the way they were counting whooping cranes?? what the heck? they had to start estimating them with prediction intervals. Models that could work for this data? \
+\
+Hierarchical models: big deal, Empirical hierarchical model or Bayesian hierarchical model framework:\
+* Data model *: PDF, data we observed z (model for the data I have) conditioned on y (data we wish we had, because all data are collected with error) and some parameters.\
+* Process model *: statistical model for the data we wish we had. Up to here we have a classical empirical hierarchical model.\
+* Parameters model: * specific to Bayesian almost always. Also called prior.\
+\
+Bayes theorem: obtain posterior distribution of something we care about given the data. Probabilistic predictions and forecasts.\
+\
+It would be really interesting if you could show how you approached the giant fish model with a hierarchical Bayesian model.
+
+Example:
+Data model: z is a column vector with each observation of whooping cranes. We need to choose a distribution for z and it will be conditioned on y and some parameters. What is y? is a column vector also, it is the true number of whooping cranes. But we don't know the true number.
+
+### Cleaned
+
+Today, we learned that spatio-temporal data differentiates from the rest because location and date (most of the time) should be measured. Spatio-temporal data is useful not only to predict location; some data needs location and time to be useful, such as temperature and rainfall, where we might use them as the predictor variables. So, we are not interested in predicting location here but in using it as an explanatory variable.\
+\
+We recall that difference and differential equations use time as discrete and continuous, respectively, and the latter are difficult to understand. Usually, we need proficient knowledge of mathematics to work with them, while difference equations are easier to use and come up with an equation.\
+\
+We touched base on agent-based models, which are simulation models that tend to be used without initial data and resemble a video game. For example, they can study how to evacuate a building if it gets on fire, where we can make assumptions such as 90% of the people will stay calm, and 10% will freak out and complicate the exit doors.\
+\
+We introduce hierarchical models as the "big deal" and describe empirical and Bayesian hierarchical model framework:\
+* Data model: PDF of the data we observed (z, model for the data I have) conditioned on y (data we wish we had because all data collected has an error) and some parameters.\
+* Process model: model for the data we wish we had. Up to here, we have a classical empirical hierarchical model.\
+* Parameter model: specific to Bayesian almost always. Also called prior distribution.\
+
+It would be really interesting if you showed how you approached the giant fish model with a hierarchical Bayesian model approach. I'm curious to learn how you could account for >100 species of fish and come up with useful results to control the water flow. And maybe beyond statistics, but how did they weigh the decision on this because any water flow would be ok for some but not all species.
+
+## Februrart 13
+
+Chapter 5 mechanistic space models - we will talk today. But start reading chapter 4 for next week.\
+Whooping crane model: first remind yourself about your goals: predict and forecast the true population size, and statistical inference on the day when population will be > 1000 individuals.\
+*Space stats falls in between forecast-prediction and inference.\
+Remember: open the computer and R is not the first thing to do, like stretching before running, here you may need to take a paper and draft and draft what you want to do.\
+\
+Hierarchical models: zero time searching in the internet, after having your goals write down your data + process + parameter (if bayesian) models.\
+We like to use bayesian because once we specify our models (picking distributions + assumptions - model specification), we apply bayes theorem and all will go smooth (model fitting). None thought needed for obtaining a posterior distribution, the software will do it for us. Brain consuming: model specification!\
+\
+1. **Data model:**\
+The model for the data that was generated or collected. $z$ is the count through time in the form of a vector.\
+$[z|y, \theta_D]$, $y$= true population size of whooping cranes, $|$ = givent that.\
+$\theta_D$= represent the parameters in our data model, in this case would be the probability of a whooping crane being seeing, $[]$ = PDF.\
+\
+Support of $z$ and $y$: values that the distribution could generate, if I flip a coin the support is cons or tails, if I through a dice the support is 1, 2, 3, 4, 5, 6.\
+\
+$0< y < inf$= integers, not half bird. Lower bound: zero, no negatives. Upper bound: more negotiable, we can call it infinite.\
+$0 < z < y$= support is something less than $y$.\
+We can choose binomial distribution distribution of $z$, in rbinom() (take draws from a distribution).\
+For examples rbinom(n=1,size=1000,prob=0.5), true population = 1000, probability that the guy will count all of them prob = 0.5. Size = 1000 is the number of trials but we are calling it the TRUE POPULATION OF WHOOPING CRANES!, the draws will be ~500. If the guy is cocky he could say prob=1.0 and result would be 1000.\
+\
+Data model:
+$[z|y,p]=Bin(y,p)$ y num of trials, p prob of success.\
+\
+2. **Process model:** model for data I wish I had.\
+\
+Assuming our data is perfect what model we would use. $[y|\theta_P]$\
+True number of whooping cranes > 0, with no known upper bound, this leads to another distribution, Poisson!\
+In R rpois(n=1, lambda=10), n = number of draws, lambda is the parameter of a poisson distribution, is the expected value and the variance. The mean of many draws will be ~10.\
+\
+$[y|]=Pois()$, specify a model that controls expected value of Pois() could be a constant or a linear model. We restrict the support to >0 by elevating e to the equation.\
+So, $\lambda$ is the expected value of Pois(). Pois() is the "more appropriate" for count data when we dont know the upper bound.\
+\
+3. **Parameter model:**\
+$\lambda_o ~ dunif(2, 50)$\
+$\gamma ~ unif(0,0.1)$, $\gamma$=growth rate greater than 0 and less than 10%.
+
+### Cleaned
+
+Yesterday in class, we reviewed the steps to build a model, starting by clearly stating our goals. For the whooping crane example, our goals are to predict and forecast the true population size and to make inference on the day when the population size will be greater than 1000 individuals. This is a "great" example of a space-time statistical model, usually, they fall between forecast-prediction and inference. Stating our goals first means we shouldn't open our programming software before knowing our objectives and what we need to do.\
+\
+Second step, especially for a hierarchical model approach (still without opening R).\
+Write down data + process + parameter (if Bayesian) models, this is where our knowledge in mathematics and stats takes action.\
+\
+**Data model:** The model for the data that was generated or collected. $z$ is the count through time in the form of a vector.\
+$[z|y, \theta_D]$, $y$= true population size of whooping cranes. $\theta_D$= represent the parameters in our data model, in this case would be the probability of a whooping crane being seen.\
+Support of $z$ and $y$: important for picking a distribution, they are the values the distribution could generate.\
+$0< y < inf$, integers.\
+$0 < z < y$= support is something less than $y$.\
+We can choose binomial distribution distribution for $z$, rbinom() (take draws from a distribution).\
+For example, rbinom(n=1,size=1000,prob=0.5), true population = 1000, probability that the guy will count all of them prob = 0.5. Size = 1000 is the number of trials but we call it the TRUE POPULATION OF WHOOPING CRANES!, the mean of the draws will be ~500.
+\
+**Process model:** model for data I wish I had. Assuming our data is perfect, what model would we use. $[y|\theta_P]$\
+The true number of whooping cranes > 0, with no known upper bound, this leads to another distribution, Poisson!\
+In R rpois(n=1, lambda=10), n = number of draws, lambda is the parameter of a poisson distribution, is the expected value and the variance. The mean of many draws will be ~10.\
+\
+**Parameter model:**\
+$\lambda_o \sim unif(2, 50)$\
+$\gamma \sim unif(0,0.1)$, $\gamma$=growth rate greater than 0 and less than 10%.\
+\
+I struggle to understand some of the math concepts related to difference and differential equations. Even though I won't be able to understand the majority of these concepts in this class (because we should know from previous classes), I struggle to understand how students without this knowledge could arrive to a space-time model suitable for our needs. I would like to go through an example like the giant fish where we can probably build up what we saw with the whooping crane example into something more complex.
+
+## February 15
+
+Today in class we reviewed Bayesian hierarchical modelling approach, with the example of the whooping cranes:\
+\
+Review from data model: $[ \underline{z} |\underline{y},p]=\beta_{in}(\underline{y},p)$ +\
+Process model: $[y_t|\sigma, \lambda_t] = Pos(\lambda_t)$, $\lambda_t=\lambda_oe^{\gamma(t-t_0)}$ +\
+Parameter model: $[\gamma]=unif(0,0.1)$, $[\lambda_o]=dunif(2,50)$, $[\gamma]$ needs to be discrete, it has to be an integer, $[p]=unif(0,1)$\
+\
+Once we reviewed the model and our assumptions in the board, we proceed to show each of these steps in R software.\
+1. We built functions for calculating lambda and the discrete uniform distribution,\
+2. Defined number of simulated data sets to make (K.tries),\
+3. Defined known random variables and parameters (t0, t, and n),\
+4. Created matrix to save unknown parameters (gamma, lambda, p),\
+5. Created matrix to save true unknown number of whooping cranes,\
+6. Created matrix to save number of observed (counted) whooping cranes,\
+7. For loop from 1 to K.tries: sample from parameter model for process model (gamma.try, lambda0.try, and p), we calculated lambda (estimated growth rate), we sampled from the process model (function for lambda.try), and finally sampled from our data model (z.try).\
+\
+Then we plotted three simulations from K.tries and observed that they can be quite different between them.\
+\
+After this we returned to the bookdown, a) we set an allowable difference between the observed and simulated data of 1000 whooping cranes, b) recorded the difference between the z (prior predictive distribution) and observed data, and c) calculated the acceptance rate (proportion where the difference between observed and simulated <1000). And finally plotted the approximate posterior distribution of parameters gamma, lambda0, and p after filtering for the acceptance rate.\
+\
+I'm struggling to understand the difference between the approach we did today in class and MCMC, mainly how we would approach MCMC with this same example.\
+I want to say that this was the best class ever!! I really liked how you went from crafting the data, process, and parameter model, translate them. into R software, applied the algorithm and plotted the results. I would really like to keep doing examples where we literally code data+process+parameter models and see a result. This made me understand a lot about many concepts we covered in STAT 768. I think this is a really good way to learn for non-stat majors.
+
+## February 20
+
+Today in class, we introduced activity 2, where we will have to choose an area around campus and record our elevation at many locations with our cellphones. Then, obtain a .gpx file, load it into R, and plot it, similar to the example we saw in class.\
+We discussed the use of packages in general and the sf package from R in particular, and how difficult it is, sometimes, to achieve tasks due to maintenance by authors (or lack thereof). Working with geospatial data in R is a challenge, many packages that work just sometimes, so it would be safer to create our own custom functions.\
+\
+Then we reviewed the concepts already covered in class, from Matrix algebra and distribution theory to the hierarchical model framework, a powerful statistical approach because it acknowledges measurement error in our data.\
+\
+As we saw in previous classes, we built our statistical model by choosing an appropriate PDF or PMF for the data, process, and parameter models, we then choose mathematical models for the parameters or moments from step 1, and choose an algorithm to fit the model and make statistical inference.\
+\
+THE most important skills: have important goals for your analysis, the first and most important step. Usually contains both prediction/forecasting and statistical inference.\
+Very important but not the most: write your statistical model.\
+Not very important: programming software to fit model.\
+\
+We introduced an example of extreme precipitation in KS to predict and quantify the uncertainty of rainfall events. First, we defined the goals and then got the data.\
+\
+I struggle to understand how we can manage missing data in this case of weather data. And what can we do when we have many consecutive days with missing data from rainfall or temperature. Recently, I downloaded weather data from NOAA manually (without the rnoaa package), and it had so many missing dates that I gave up on NOAA and used MESONET.
+
+## February 22
+
+Today in class, we introduced some Geographic Information Systems (GIS) concepts and covered the four main types of data we will use (shapefiles, rasters, and points). Shapefiles represent continuous spatial objects and boundaries in a vector format (i.e., rivers, cities, fields). Raster files are rectangular matrices or grids of pixels visualized as georeferenced images. We reviewed some examples of raster databases like PRISM (weather data) and CROPSCAPE (cropland data layer). Raster images are often model-based predictions because observations are finite in space, and interpolation to all the area is needed to have a "complete" data set in space. Raster can be big (many MG or GB) files and are difficult to work with in R. Points files are coordinates + a coordinate system. Using R as a tool for GIS can be frustrating because new packages are released often, they work for some time, and then they stop maintaining them.\
+\
+After covering these topics, we introduced the Gaussian process as a probability distribution over functions, if those functions are observed, then each vector of values follows a multivariate normal distribution. The normal distribution is (almost) always trash, the multivariate normal distribution is really useful.\
+\
+I struggle to understand the Gaussian process, but I guess we will cover those in future classes, and I think it would be great to see an example like the one we saw last week with Gaussian process. I also got curious about Carlos' question on the error propagation of (if I remember well) raster files.
+
+## February 27
+
+Yesterday in class we covered concepts related to the Gaussian process (probability distribution that generates a function), mainly related to the multivariate normal distribution (MVN).\
+$\boldsymbol{\eta} \sim N(0, \sigma^2R)$, MVN. Variance covariance matrix part of a MVN.\
+**Correlation matrix (R):** describes correlation between each element of random variable $\boldsymbol{\eta}$.\
+**Correlation function:** function describing the correlation.\
+**Compound symmetry matrix:** all pairs of measurements have the same correlation and all diagonal elements have a value of 1.\
+**Autoregressive of order 1 - AR(1):** commonly used for modelling time and spatial data where observations are equidistant in time. The structure assumes that observations closer in time are more correlated than those farther apart. $\phi$ represents the autoregressive parameter, which controls the strength of correlation decay over time in the AR(1).\
+\
+We saw an example simulating a MVN with mvrnnorm() in R, where we have to specify a variance covariance matrix (I-identity matrix) and a variance $\sigma$, and then checked the autocorrelation with acf().\
+\
+We then introduced the **Linear models for correlated errors** (Krigging).\
+$y_i=\beta_0+\beta_1X_i+\eta_i+\epsilon_i$\
+$\epsilon_i \sim N(0,\sigma^2)$ describes uncorrelated components.\
+$\eta \sim MVN(0, ?)$ describes correlated components, its a random parameter.\
+parameters: $2\eta+2$\ for beta_0 and beta_1.\
+\
+Example, bioluminescence:\
+To start: intercept only model $y_i=\beta_0+\epsilon_i$, $\epsilon \sim N(0, \sigma^2)$\
+Do I model it on the expected value, or do I model it on the variance - spatial stats is all about modelling on the 2nd moment (in the variance). So we "fix" the problem by adding a spatial random effect:\
+$y_i=\beta_0+\epsilon_i+\eta_i$, $\epsilon \sim N(0, \sigma^2)$, $\eta=(\eta_1, \eta_2...\eta_n) \sim MVN(0, \sigma^2R)$\
+\
+I struggle to understand the different implications of modelling for the expected value vs on the variance, I would like to know more about this.\
+\
+I'm analyzing data of my own research, and I want to "group" the data by similar environments (north, central, and south of the U.S.), in my case using kmeans (something I would like to discuss in our meeting). Once I have those clusters the simplest approach would be to treat those independently and run a model for each (i.e. to see what covariates relates more with yield, protein, oil - my response variables). My question is, I loose a big part of the story by treating those clusters independently and I would like to know how to include the cluster as an effect (like a random effect?).
+
+Generalized least squares (GLS in R): you have options ml, ls more than one algorithm option so is not always least squares!! shit name.\
+We define the correlation function as a function of the distance which is the depth.\
+$E(y)=\beta_0+\eta$\
+We did an intercept only model with gls, as homework we can try adding a slope parameter, that was really an intercept only model that fitted the points son well?
+
+## February 29
+
+Yesterday in class, we covered an example of linear models for correlated errors using the bioluminescent data.
+\
+First we run an intercept-only model $y_i=\beta_0+\epsilon_i$, $\epsilon_i \sim N(0, \sigma^2_i)$.\
+We then run an intercept only linear model with spatial random effect:
+Linear model for correlated errors:\
+$y_i=\beta_0+\eta_i+\epsilon_i$, $\epsilon \sim N(0,\sigma^2)$, spatial model by adding space term effect.\
+At each depth, $\eta$ is the spatial effect for every observation.\
+We add an assumption there: $\eta=(\eta_1, \eta_2,...,\eta_n) \sim MVN(0, \sigma_2C)$.\
+\
+We also wrote a hierarchical model for the rainfall data:\
+Data model:$[z|y]=N(y, \sigma^2_z)$ z=measured rainfall, given some parameters |, y = true rainfall. It incorporates error in the $\sigma^2_z$, is the variance from $\epsilon_i$.\
+As a regression model the data model would be: $z=y+\epsilon$, $\epsilon \sim N(0, \sigma^2)$.\
+Process model:$[y|\beta_0,\phi,\sigma^2]=MVN(\beta_0,\sigma^2C)$ model for the data I wish I had.\
+If it were Bayesian, we would put a model for the parameters, but we won't go that way. It's an empirical hierarchical model, often fitted with maximum likelihood (vs Bayesian, which is fitted with Bayes' theorem).\
+\
+And then we run a live example in R going through an intercept only model, a second-order polynomial incorporating the spatial effect, and lastly the hierarchical empirical model. The hierarchical model was the most accurate to predict precipitation. This example was really helpful to understand the differences and advantages between them.\
+I struggle to understand how the gls function works in R, and what each argument means comparing to the statistical models that we write.
+
+## March 7
+
+Yesterday in class we reviewed part of the code from the Dickens Hall parking lot example. We saw the example of low rank gaussian model using mgcv, the rpart example with vertical elevation spots like a staircase. We saw the example of the boosted regression tree that try to "smooth" the cliffs compred to a single regression tree. Boosted regression trees are additive regression models in which individual terms are simple trees, so it fit many models and combine them for prediction.\
+\
+Following, we continued an in-class work day for working in our individual projects. I discussed about the analysis with other students who gave me good feedback and helped me to move forward with it.\
+
+## March 19
+
+Today, we reviewed concepts covered in class such as matrix algebra and distribution theory. They are not really from spatial stats, but they are concepts we should know from before. Also, we talked about the philosophy of statistical modeling in terms of what we think a statistical model is (i.e., a simplification of the reality with error.)\
+The whooping crane data was an example of hierarchical modeling.\
+The linear model for correlated errors is an empirical hierarchical model (non-Bayesian) and is the usual spatial stats model.\
+The model-building process: again, the most important skill is writing out the goals of your analysis, which usually contain prediction or forecasting and statistical inference. 2nd important skill is writing down your statistical model, 3rd important skill is knowing a statistical programming language to fit the model.\
+\
+Finished up with Kansas rainfall example:\
+The non-hierarchical linear model with identical errors has limitations because it takes on negative values and is far from the maximum value of pp, and it doesn't do a good job of copying the variability in space (Wiggliness).\
+The hierarchical linear model with two error terms does a way better job in copying the spatial variability but is still far in the maximum values of pp, and is complex to compute in R.\
+The third model is a hierarchical linear model with two error terms using low-rank approximation (resembles model kriging) which improves the predictions compared to the previous one.\
+Lastly, the GAM assuming a Tweedie distribution with a spatial random effect (Gaussian process) best predicted rainfall in Kansas because it captured the lowest and highest precipitations observed.\
+\
+In the last model, I struggle to understand why we are calling the spatial effect a random effect, and overall I have a hard time following these models because some fundamental previous knowledge I lack. 
+
+## March 21
+
+During this class I worked on Activity 2. I uploaded the data I recorded in the North Agronomy Farm at K-State, I choose a plot that we use every year (since I'm around) for experimental trials. I chose this site with the objective of checking if there is any major difference between the lowest and highest elevation that could affect the allocation of treatments and blocking. I think for this data, the linear model with iid errors (polynomial), the gam model, support vector regression and the boosted regression tree worked good. They could capture the ~1m difference between the lowest and highest point and the observed predictions made sense compared to what we observed.\
+\
+I would like to know which of the models to choose, since all those seems to be working more or less fine, and we shall cover that in the next task of activity 2.
+
+## March 26
+
+Today in class we kept exploring the Dickens Hall Parking Lot example. We model the data using GAM and Boosted Regression Tree. Once we checked the predictions using the training data, we brought a new data set for model checking and comparison. We used this new data to make predictions with the model fitted before, and compared the predicted vs the observed values. Following, we quantified the predictive accuracy using scoring rules. We used the logarithmic scoring rule (proper in all situations, the higher the better), the mean square error (appropriate only with normally distributed data), and the mean absolute error (better for interpretation since it will have the units of the response). Lastly, we determined (only for the linear models run with lm), what percentage (%) of the new observations falls within the 95% prediction interval. This is called calibration, if the model is calibrated it should cover 95% of the new observations. In our case using the polynomial model the data covered within the prediction was 83%.\
+\
+You did mentioned that, as a good practice, we should always have an extra data set for model checking (best case scenario), or otherwise split part of our data for model fitting and model checking. I always have the doubt if this is something I would like to do with my own data. For example in the analysis I'm doing now, I like to say that I want to do inference on what happened to the observed data (model fitting I guess), since I don't think the data would be sufficient or complex enough to predict new observations. But anyways, I understand this is kind of a halfway approach.
+
+## March 28
+
+Today in class we worked on our final projects, specifically advancing the analysis of my prelims. Next week I will start working more specifically in the class project trying to adapt my current analysis to include a spatial component.\
+\
+I have no questions or doubts at the moment.
+
+## April 2
+
+Today in class we had a quick look at the tutorial (Appendix S1) of a manuscript doing spatio-temporal analysis on the distribution of aphids in Kansas (R. padi, S. avenae, and S. graminum), which are vectors of Barley Yellow Dwarf Virus (BYDV). Following an explanation of the data, we explored similar models with a lived example. The abundance of the Bird Cherry aphid is a type of count data, where we have several points across kansas with the location (latitude and longitude), how many aphids were counted, and the proportion of them that were infected with the disease. We plotted the land cover of Kansas, and specifically, we selected lands covered by herbaceous (areas dominated by herbaceous vegetation or gramanoids, i.e., grasslands). We created a variable characterizing the % of grassland within a 5 km radius around the sample location of aphids. We used this variable as our predictor in three different spatio-temporal models to describe the abundance of the aphid. We obtained the predicted abundance of the aphid at 0% and 100% of grassland coverage.\
+\
+I guess I am not really sure how I will include the space component in my data, I dont see it feasible to include it for predicting, say, protein concentration in soybeans.
+
+## April 4
+
+Today in class we worked on our Final Project, specifically advancing the analysis of my prelims. This week I will start working more specifically in the class project trying to adapt my current analysis to include a spatial component.\
+\
+I have no questions or doubts at the moment.
+
+## April 11
+
+Last April 11, we did an in-class work day advancing Activity 3. The data we used consists on abundance data of the English grain aphid on 341 points collected across the state of Kansas during 2014 and 2015. The English grain aphid is a vector of the barley yellow dwarf virus (BYDV), a member of the Luteoviruses, which is a group of five closely related virus strains. BYDV can be transmitted by more than 20 aphid species, being the most important the bird-cherry aphid, the corn leaf aphid, and the English grain aphid. The presence of the disease in wheat is diagnosed by the presence of aphid vectors, the occurrence of yellowed leaves, and stunted plants grouped in small patches among normal plants, although visual diagnosing is complicated because it can be confused with wheat streak mosaic, nutrient deficiency, root diseases or environmental stress. By observing the data we clearly see that the frequency of the English grain aphid increases from the west to the east of Kansas, closely related with higher precipitations and more area planted with wheat towards the east.\
+I fitted three different GAM models considering different distributions: negative binomial, poisson, and zero inflated poisson. I modeled the abundance (count) as a function of the percentage of grassland within a 5 km radius, the year, and a smooth (random) term including latitude and longitude.
+
+## April 16
+
+Today in class we kept exploring the disease data related to the abundance of the Bird Cherry-oat Aphid, and the proportion infected with barley yellow dwarf virus (BYDV). In addition, we had a look at an Earthquake data from Kansas that recorded earthquake events between 1977 and 2020. We explored the data and saw an apparent increase in earthquakes over time with a really high frequency between 2014-2020, although it seems something weird is going on between 1990 and 2012, possibly indicating missing data or earthquake events not accounted for during that time.
+
+## April 18
+Last Thursday in class, I kept working on Activity 3. I run four GAM models with different distributions: poisson, negative binomial, zero inflated poisson, and gaussian distribution. I split the data into training (60%) and testing (40%). According to the Akaike Information Criteria, the best two models are the negative binomial and the gaussian. While the models with the lower mean absolute error were the negative binomial and the zero inflated poisson (22 and 24).
+
+## April 23
+
+Today in class we kept working on the earthquake data set, and discussed the dynamism of the data because it can be modified over time based on new or dropped earthquakes events. We visualized the data on space (removing time) with the map, and we saw more frequency in the south center, we also visualize the time trend (removed space) and saw way more frequency in recent years. Also, we saw an animation of the earthquakes over time visualizing a higher frequency over the last 10 years in the south center region.\
+
+Goals of the study: prediction and inference of the events, where is the area with highest probability of an earthquake? we don't want to predict the probability at a point because it will probably be zero.\
+Data model: $y=z$\
+Process model: $z \sim IPPP(\lambda(s,e))$\
+$\lambda(s,t)=e^{\beta_0+\beta1 \cdot x(s,t)+\eta_s+\eta_t}$\
+$\eta_s \sim MVN(0,\sum_s)$\
+$\eta_t \sim MVN(0,\sum_t)$\
+
+We modeled the earthquake data and saw that the expected number of earthquakes per 100 km$^2$ per year is higher when we are close to an oil well.
+
+## April 30
+
+Something I learned today is that using GAMs to predict values outside the observed range of your data (forecast or hindcast) is not advisable due to the significantly increased uncertainty. When making predictions beyond this range, it’s important to clearly indicate the heightened level of uncertainty associated with these estimates.\
+\
+Today is the last class and we also reviewed all the deadlines for the peer-review project, final project, presentations, and final portfolio.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

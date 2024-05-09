@@ -1,0 +1,226 @@
+# Activity 1 - Morning walk
+
+## Libraries
+
+```{r message=FALSE, warning=FALSE}
+library(sf)
+library(lubridate)
+library(mgcv)
+library(rpart)
+library(leaflet)
+library(rgdal)
+library(tidyverse)
+```
+
+## Data
+
+```{r message=FALSE, warning=FALSE}
+url <- "https://www.dropbox.com/scl/fi/slb8wn1np1ntzhaw30z58/Caminata_de_ma_ana.gpx?rlkey=vv5vsiuhoozzc1q0mfbzm2aof&st=ouslm2cu&dl=1"
+
+am_walk <- st_read(dsn=url,layer="track_points") 
+
+# Change time to a character
+am_walk$time <- as.character(am_walk$time)
+
+# Drop all extra information/data other than location and time
+am_walk <- am_walk[,5]
+```
+
+## Visualize map
+
+```{r}
+# Visualize morning walk 
+map_leaflet <- leaflet() %>%
+  addProviderTiles(providers$Esri.WorldImagery)
+
+map_leaflet %>%
+  addCircleMarkers(data = am_walk,
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "red")
+```
+
+## Write kml
+
+```{r}
+# Write to kml file to view in google earth pro
+#st_write(am_walk,"am_walk.kml",driver = "kml")
+
+# Change date/time to class "POSIXct"
+am_walk$time <- as_datetime(am_walk$time,tz="America/Chicago")
+```
+
+## Visualize lat lon
+
+```{r, fig.height=7, fig.width=7}
+# Plot time series of spatial locations
+par(mfrow=c(2,1))
+plot(data.frame(am_walk)[[1]],st_coordinates(am_walk)[,1],pch="*",xlab="Time",ylab="Longitude")
+plot(data.frame(am_walk)[[1]],st_coordinates(am_walk)[,2],pch="*",xlab="Time",ylab="Lattitude")
+
+# Make data.frame for data analysis
+# Note that time is in seconds since the start of the race
+df.am_walk <- data.frame(t = as.numeric(am_walk$time - am_walk$time[1]),
+                          s1 = st_coordinates(am_walk)[,1],
+                          s2 = st_coordinates(am_walk)[,2])
+```
+
+```{r}
+head(df.am_walk)
+```
+
+### 1. Polynomial
+
+```{r, fig.height=7, fig.width=7}
+# Fit model to longitude (s_1) using time (t) as a predictor
+m1 <- lm(s1 ~ poly(t,degree=10,raw=TRUE),data=df.am_walk)
+
+# Fit model to latitude (s_1) using time (t) as a predictor
+m2 <- lm(s2 ~ poly(t,degree=10,raw=TRUE),data=df.am_walk)
+
+# Estimate movement trajectory at a very fine temporal scale (every 1/2th of a second)
+df.pred <- data.frame(t = seq(0,3100,by=0.5))
+df.pred$s1.hat <- predict(m1,newdata=df.pred)
+df.pred$s2.hat <- predict(m2,newdata=df.pred)
+
+# Plot estimated movement trajectory
+par(mfrow=c(2,1))
+plot(df.am_walk$t,df.am_walk$s1,pch="*",xlab="Time",ylab="Longitude")
+points(df.pred$t,df.pred$s1.hat,typ="l",col="gold",lwd=2)
+plot(df.am_walk$t,df.am_walk$s2,pch="*",xlab="Time",ylab="Latitude")
+points(df.pred$t,df.pred$s2.hat,typ="l",col="gold",lwd=2)
+
+# Write to kml file to view estimated trajectory in google earth pro
+df.am_walk.hat.lm <- st_as_sf(df.pred, coords = c("s1.hat", "s2.hat"), 
+                           crs = st_crs(am_walk))
+#st_write(df.am_walk.hat,"am_walk.lm.hat.kml",driver = "kml")
+
+# Visualize
+map_leaflet %>%
+  addCircleMarkers(data = df.am_walk.hat.lm,
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "red")
+
+# Show time series of estimated speed
+dist.hat <- st_distance(df.am_walk.hat.lm[1:6200,],df.am_walk.hat.lm[2:6201,],by_element=TRUE)
+(sum(dist.hat)/1000)*0.62 # Model check. Length of estimated trajectory in miles
+speed.hat <- (dist.hat/0.5)*2.24 # units are in miles per hour
+plot(df.pred$t[-1],speed.hat,xlab="Time (seconds)",ylab="Velocity (miles per hour)")
+
+# Comparison to observed data
+# Class discussion about what would happen if we collected more location data?
+dist <- st_distance(am_walk[1:840,],am_walk[2:841,],by_element=TRUE)
+(sum(dist, na.rm = T)/1000)*0.62
+speed <- (dist/as.numeric(diff(am_walk$time)))*2.24
+plot(df.am_walk$t,speed,xlab="Time (seconds)",ylab="Velocity (miles per hour)")
+
+```
+
+
+### 2. GAM - low rank gaussian process
+
+```{r, fig.height=7, fig.width=7}
+# Fit model to longitude (s_1) using time (t) as a predictor
+m1 <- gam(s1 ~ s(t,bs="gp",k=50),data=df.am_walk)
+
+# Fit model to latitude (s_1) using time (t) as a predictor
+m2 <- gam(s2 ~ s(t,bs="gp",k=50),data=df.am_walk)
+
+# Estimate movement trajectory at a very fine temporal scale (every 1/2th of a second)
+df.pred <- data.frame(t = seq(0,3100,by=0.5))
+df.pred$s1.hat <- predict(m1,newdata=df.pred)
+df.pred$s2.hat <- predict(m2,newdata=df.pred)
+
+# Plot estimated movement trajectory
+par(mfrow=c(2,1))
+plot(df.am_walk$t,df.am_walk$s1,pch="*",xlab="Time",ylab="Longitude")
+points(df.pred$t,df.pred$s1.hat,typ="l",col="gold",lwd=2)
+plot(df.am_walk$t,df.am_walk$s2,pch="*",xlab="Time",ylab="Latitude")
+points(df.pred$t,df.pred$s2.hat,typ="l",col="gold",lwd=2)
+
+# Write to kml file to view estimated trajectory in google earth pro
+df.am_walk.hat.gam <- st_as_sf(df.pred, coords = c("s1.hat", "s2.hat"), 
+                           crs = st_crs(am_walk))
+#st_write(df.am_walk.hat,"am_walk.gam.hat.kml",driver = "kml")
+
+# Visualize
+map_leaflet %>%
+  addCircleMarkers(data = df.am_walk.hat.gam,
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "red")
+
+# Show time series of estimated speed
+dist.hat <- st_distance(df.am_walk.hat.gam[1:6200,],df.am_walk.hat.gam[2:6201,],by_element=TRUE)
+(sum(dist.hat)/1000)*0.62 # Model check. Length of estimated trajectory in miles. Should be ~26.2
+speed.hat <- (dist.hat/0.5)*2.24 # units are in miles per hour
+plot(df.pred$t[-1],speed.hat,xlab="Time (seconds)",ylab="Velocity (miles per hour)")
+
+# Comparison to observed data
+# Class discussion about what would happen if we collected more location data?
+dist <- st_distance(am_walk[1:840,],am_walk[2:841,],by_element=TRUE)
+(sum(dist, na.rm = T)/1000)*0.62
+speed <- (dist/as.numeric(diff(am_walk$time)))*2.24
+```
+
+### 3. Regression tree
+
+```{r, fig.height=7, fig.width=7}
+# Fit model to longitude (s_1) using time (t) as a predictor
+m1 <- rpart(s1 ~ t,data=df.am_walk,control=rpart.control(cp = 0.0001))
+summary(m1)
+
+# Fit model to latitude (s_1) using time (t) as a predictor
+m2 <- rpart(s2 ~ t,data=df.am_walk,control=rpart.control(cp = 0.0001))
+summary(m2)
+
+# Estimate movement trajectory at a very fine temporal scale (every 1/2th of a second)
+df.pred <- data.frame(t = seq(0,3100,by=0.5))
+df.pred$s1.hat <- predict(m1,newdata=df.pred)
+df.pred$s2.hat <- predict(m2,newdata=df.pred)
+
+# Write to kml file to view estimated trajectory in google earth pro
+df.am_walk.hat.tree <- st_as_sf(df.pred, coords = c("s1.hat", "s2.hat"), 
+                           crs = st_crs(am_walk))
+#st_write(df.am_walk.hat,"am_walk.tree.hat.kml",driver = "kml")
+
+# Visualize
+map_leaflet %>%
+  addCircleMarkers(data = df.am_walk.hat.tree,
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "red")
+
+# Show time series of estimated speed
+dist.hat <- st_distance(df.am_walk.hat.tree[1:6200,],df.am_walk.hat.tree[2:6201,],by_element=TRUE)
+(sum(dist.hat)/1000)*0.62 # Model check. Length of estimated trajectory in miles. Should be ~26.2
+speed.hat <- (dist.hat/0.5)*2.24 # units are in miles per hour
+plot(df.pred$t[-1],speed.hat,xlab="Time (seconds)",ylab="Velocity (miles per hour)")
+
+# Comparison to observed data
+# Class discussion about what would happen if we collected more location data?
+dist <- st_distance(am_walk[1:840,],am_walk[2:841,],by_element=TRUE)
+(sum(dist, na.rm = T)/1000)*0.62
+speed <- (dist/as.numeric(diff(am_walk$time)))*2.24
+```
+
+## Visualize all 
+
+```{r}
+# Visualize
+map_leaflet %>%
+  addCircleMarkers(data = am_walk, 
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "black", label = "Observed") %>% # Observed
+  addCircleMarkers(data = df.am_walk.hat.lm, 
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "red", label = "Polynomial") %>% # Polynomial 
+  addCircleMarkers(data = df.am_walk.hat.gam,
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "green", label = "GAM") %>% # GAM
+  addCircleMarkers(data = df.am_walk.hat.tree,
+                   radius = 3, stroke = FALSE, fillOpacity = 0.5,
+                   color = "yellow", label = "tree") # Regression tree
+```
+### 4. Comments
+
+When I arrived to Laffene I stopped recording and started again from the same point once I was leaving (around 30 min after). The polynomial model is trying to fit a line during the time in between the recordings where there's no data, and went far away from the trajectory. The gam model also tried to estimate the trajectory while there was no recordings and deviated from the real trajectory although not as far away as the polynomial. The regression tree worked really well in following the real trajectory although the way of modeling the data is unrealistic, because it has periods of times with no movement and sudden jumps at high speed.\
+\
+I started and finish the recording inside my office in Throckmorton, so during the time i was inside the building the cellphone was not able to record the location so accurately.

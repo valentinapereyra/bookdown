@@ -1,0 +1,3369 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="am_walk" id="am_walk">
+	<SimpleField name="time" type="string"></SimpleField>
+</Schema>
+<Folder><name>am_walk</name>
+  <Placemark>
+	<name>2024-02-07 08:54:16</name>
+      <Point><coordinates>-96.58411,39.193009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:17</name>
+      <Point><coordinates>-96.58411,39.193009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:21</name>
+      <Point><coordinates>-96.58411,39.193009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:25</name>
+      <Point><coordinates>-96.58411,39.193009</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:31</name>
+      <Point><coordinates>-96.584627,39.193252</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:36</name>
+      <Point><coordinates>-96.584684,39.193257</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:42</name>
+      <Point><coordinates>-96.584698,39.193249</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:43</name>
+      <Point><coordinates>-96.584783,39.193301</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:46</name>
+      <Point><coordinates>-96.584813,39.193315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:53</name>
+      <Point><coordinates>-96.584952,39.193344</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:54:59</name>
+      <Point><coordinates>-96.584991,39.19336</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:00</name>
+      <Point><coordinates>-96.585013,39.193357</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:09</name>
+      <Point><coordinates>-96.585035,39.193354</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:10</name>
+      <Point><coordinates>-96.585056,39.193351</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:11</name>
+      <Point><coordinates>-96.585078,39.193348</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:12</name>
+      <Point><coordinates>-96.585111,39.193324</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:13</name>
+      <Point><coordinates>-96.585128,39.193317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:14</name>
+      <Point><coordinates>-96.585194,39.19331</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:15</name>
+      <Point><coordinates>-96.585228,39.193279</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:16</name>
+      <Point><coordinates>-96.585289,39.193242</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:17</name>
+      <Point><coordinates>-96.585308,39.19322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:18</name>
+      <Point><coordinates>-96.585314,39.193216</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:19</name>
+      <Point><coordinates>-96.58532,39.193212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:20</name>
+      <Point><coordinates>-96.58534,39.193202</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:21</name>
+      <Point><coordinates>-96.585349,39.193191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:22</name>
+      <Point><coordinates>-96.585382,39.193179</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:23</name>
+      <Point><coordinates>-96.585396,39.193176</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:24</name>
+      <Point><coordinates>-96.58542,39.193172</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:25</name>
+      <Point><coordinates>-96.585445,39.193188</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:26</name>
+      <Point><coordinates>-96.585456,39.193205</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:27</name>
+      <Point><coordinates>-96.585459,39.19322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:28</name>
+      <Point><coordinates>-96.585455,39.19323</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:29</name>
+      <Point><coordinates>-96.585457,39.193219</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:30</name>
+      <Point><coordinates>-96.585459,39.193204</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:31</name>
+      <Point><coordinates>-96.585472,39.193197</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:32</name>
+      <Point><coordinates>-96.58547,39.193212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:33</name>
+      <Point><coordinates>-96.58547,39.193212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:34</name>
+      <Point><coordinates>-96.58547,39.193212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:35</name>
+      <Point><coordinates>-96.585474,39.193234</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:36</name>
+      <Point><coordinates>-96.585467,39.193235</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:37</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:38</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:39</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:40</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:41</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:42</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:43</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:44</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:45</name>
+      <Point><coordinates>-96.585471,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:46</name>
+      <Point><coordinates>-96.58546,39.193217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:47</name>
+      <Point><coordinates>-96.585456,39.193219</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:48</name>
+      <Point><coordinates>-96.585456,39.193219</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:49</name>
+      <Point><coordinates>-96.585458,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:50</name>
+      <Point><coordinates>-96.585453,39.193231</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:51</name>
+      <Point><coordinates>-96.585451,39.193229</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:52</name>
+      <Point><coordinates>-96.585454,39.193227</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:53</name>
+      <Point><coordinates>-96.585454,39.193231</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:54</name>
+      <Point><coordinates>-96.585453,39.193231</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:55</name>
+      <Point><coordinates>-96.585451,39.193232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:56</name>
+      <Point><coordinates>-96.585451,39.193232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:57</name>
+      <Point><coordinates>-96.585451,39.193232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:58</name>
+      <Point><coordinates>-96.585451,39.193232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:55:59</name>
+      <Point><coordinates>-96.585448,39.193224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:00</name>
+      <Point><coordinates>-96.585448,39.193225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:01</name>
+      <Point><coordinates>-96.585448,39.193225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:02</name>
+      <Point><coordinates>-96.585448,39.193225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:03</name>
+      <Point><coordinates>-96.585448,39.193225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:04</name>
+      <Point><coordinates>-96.585451,39.193227</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:05</name>
+      <Point><coordinates>-96.585452,39.193224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:06</name>
+      <Point><coordinates>-96.585458,39.193224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:07</name>
+      <Point><coordinates>-96.585459,39.193229</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:08</name>
+      <Point><coordinates>-96.585462,39.193225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:09</name>
+      <Point><coordinates>-96.585463,39.193233</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:10</name>
+      <Point><coordinates>-96.585462,39.193239</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:11</name>
+      <Point><coordinates>-96.585457,39.193239</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:12</name>
+      <Point><coordinates>-96.585458,39.193239</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:13</name>
+      <Point><coordinates>-96.585457,39.19324</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:14</name>
+      <Point><coordinates>-96.585459,39.193236</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:15</name>
+      <Point><coordinates>-96.585459,39.193226</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:16</name>
+      <Point><coordinates>-96.585461,39.193227</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:17</name>
+      <Point><coordinates>-96.585459,39.193222</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:18</name>
+      <Point><coordinates>-96.585462,39.193226</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:19</name>
+      <Point><coordinates>-96.585481,39.193225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:20</name>
+      <Point><coordinates>-96.585508,39.193224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:21</name>
+      <Point><coordinates>-96.585534,39.193226</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:22</name>
+      <Point><coordinates>-96.585552,39.193222</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:23</name>
+      <Point><coordinates>-96.585578,39.19322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:24</name>
+      <Point><coordinates>-96.585588,39.193215</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:25</name>
+      <Point><coordinates>-96.585598,39.19321</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:26</name>
+      <Point><coordinates>-96.585624,39.193206</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:27</name>
+      <Point><coordinates>-96.58564,39.193202</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:28</name>
+      <Point><coordinates>-96.585657,39.193196</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:29</name>
+      <Point><coordinates>-96.585675,39.193183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:30</name>
+      <Point><coordinates>-96.585689,39.193171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:31</name>
+      <Point><coordinates>-96.585709,39.193169</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:32</name>
+      <Point><coordinates>-96.585734,39.193169</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:33</name>
+      <Point><coordinates>-96.585749,39.193166</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:34</name>
+      <Point><coordinates>-96.585765,39.193163</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:35</name>
+      <Point><coordinates>-96.585788,39.193164</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:36</name>
+      <Point><coordinates>-96.585808,39.193166</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:37</name>
+      <Point><coordinates>-96.585831,39.193171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:38</name>
+      <Point><coordinates>-96.585853,39.19317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:39</name>
+      <Point><coordinates>-96.585872,39.193169</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:40</name>
+      <Point><coordinates>-96.585891,39.19317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:41</name>
+      <Point><coordinates>-96.585913,39.193175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:42</name>
+      <Point><coordinates>-96.585932,39.193175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:43</name>
+      <Point><coordinates>-96.585951,39.193178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:44</name>
+      <Point><coordinates>-96.585968,39.193177</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:45</name>
+      <Point><coordinates>-96.585986,39.193177</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:46</name>
+      <Point><coordinates>-96.586007,39.193178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:47</name>
+      <Point><coordinates>-96.58603,39.193175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:48</name>
+      <Point><coordinates>-96.586046,39.193173</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:49</name>
+      <Point><coordinates>-96.58607,39.19318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:50</name>
+      <Point><coordinates>-96.586089,39.193183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:51</name>
+      <Point><coordinates>-96.586109,39.193185</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:52</name>
+      <Point><coordinates>-96.586126,39.193191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:53</name>
+      <Point><coordinates>-96.58615,39.193196</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:54</name>
+      <Point><coordinates>-96.586168,39.193195</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:55</name>
+      <Point><coordinates>-96.586187,39.19319</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:56</name>
+      <Point><coordinates>-96.586205,39.193191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:57</name>
+      <Point><coordinates>-96.586222,39.193195</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:58</name>
+      <Point><coordinates>-96.58624,39.193189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:56:59</name>
+      <Point><coordinates>-96.586259,39.19319</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:00</name>
+      <Point><coordinates>-96.586281,39.193191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:01</name>
+      <Point><coordinates>-96.586295,39.193191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:02</name>
+      <Point><coordinates>-96.58632,39.193191</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:03</name>
+      <Point><coordinates>-96.586346,39.193189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:04</name>
+      <Point><coordinates>-96.586359,39.193188</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:05</name>
+      <Point><coordinates>-96.586372,39.193187</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:06</name>
+      <Point><coordinates>-96.586399,39.193184</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:07</name>
+      <Point><coordinates>-96.586413,39.193179</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:08</name>
+      <Point><coordinates>-96.586434,39.193175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:09</name>
+      <Point><coordinates>-96.586453,39.193173</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:10</name>
+      <Point><coordinates>-96.586484,39.19317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:11</name>
+      <Point><coordinates>-96.586495,39.193168</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:12</name>
+      <Point><coordinates>-96.586506,39.193167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:13</name>
+      <Point><coordinates>-96.586537,39.193166</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:14</name>
+      <Point><coordinates>-96.58655,39.193164</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:15</name>
+      <Point><coordinates>-96.586563,39.193162</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:16</name>
+      <Point><coordinates>-96.586583,39.193159</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:17</name>
+      <Point><coordinates>-96.586608,39.193156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:18</name>
+      <Point><coordinates>-96.586629,39.193158</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:19</name>
+      <Point><coordinates>-96.586644,39.19316</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:20</name>
+      <Point><coordinates>-96.58667,39.193161</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:21</name>
+      <Point><coordinates>-96.586688,39.19316</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:22</name>
+      <Point><coordinates>-96.58671,39.193155</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:23</name>
+      <Point><coordinates>-96.586727,39.193156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:24</name>
+      <Point><coordinates>-96.586749,39.193154</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:25</name>
+      <Point><coordinates>-96.586768,39.193153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:26</name>
+      <Point><coordinates>-96.586791,39.19315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:27</name>
+      <Point><coordinates>-96.586807,39.193152</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:28</name>
+      <Point><coordinates>-96.586828,39.193152</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:29</name>
+      <Point><coordinates>-96.586846,39.193149</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:30</name>
+      <Point><coordinates>-96.586872,39.193153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:31</name>
+      <Point><coordinates>-96.586886,39.193148</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:32</name>
+      <Point><coordinates>-96.586904,39.193145</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:33</name>
+      <Point><coordinates>-96.586921,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:34</name>
+      <Point><coordinates>-96.58694,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:35</name>
+      <Point><coordinates>-96.586959,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:36</name>
+      <Point><coordinates>-96.586974,39.193138</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:37</name>
+      <Point><coordinates>-96.586996,39.193133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:38</name>
+      <Point><coordinates>-96.587013,39.193135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:39</name>
+      <Point><coordinates>-96.587032,39.193139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:40</name>
+      <Point><coordinates>-96.587056,39.193134</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:41</name>
+      <Point><coordinates>-96.587065,39.19313</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:42</name>
+      <Point><coordinates>-96.587098,39.19313</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:43</name>
+      <Point><coordinates>-96.587109,39.19313</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:44</name>
+      <Point><coordinates>-96.587131,39.193128</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:45</name>
+      <Point><coordinates>-96.587148,39.193124</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:46</name>
+      <Point><coordinates>-96.587167,39.193124</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:47</name>
+      <Point><coordinates>-96.58719,39.19313</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:48</name>
+      <Point><coordinates>-96.58721,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:49</name>
+      <Point><coordinates>-96.587226,39.193139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:50</name>
+      <Point><coordinates>-96.587261,39.193147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:51</name>
+      <Point><coordinates>-96.587271,39.19315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:52</name>
+      <Point><coordinates>-96.58731,39.193151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:53</name>
+      <Point><coordinates>-96.587319,39.193151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:54</name>
+      <Point><coordinates>-96.587342,39.193149</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:55</name>
+      <Point><coordinates>-96.587359,39.19315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:56</name>
+      <Point><coordinates>-96.587396,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:57</name>
+      <Point><coordinates>-96.587405,39.19314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:58</name>
+      <Point><coordinates>-96.58743,39.193138</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:57:59</name>
+      <Point><coordinates>-96.587446,39.193138</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:00</name>
+      <Point><coordinates>-96.587465,39.193136</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:01</name>
+      <Point><coordinates>-96.587487,39.193136</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:02</name>
+      <Point><coordinates>-96.587504,39.193136</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:03</name>
+      <Point><coordinates>-96.58753,39.193133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:04</name>
+      <Point><coordinates>-96.587545,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:05</name>
+      <Point><coordinates>-96.587566,39.193133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:06</name>
+      <Point><coordinates>-96.587592,39.193136</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:07</name>
+      <Point><coordinates>-96.587605,39.193135</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:08</name>
+      <Point><coordinates>-96.58764,39.19314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:09</name>
+      <Point><coordinates>-96.587651,39.193143</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:10</name>
+      <Point><coordinates>-96.587671,39.193146</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:11</name>
+      <Point><coordinates>-96.587691,39.193148</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:12</name>
+      <Point><coordinates>-96.58771,39.193153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:13</name>
+      <Point><coordinates>-96.587734,39.193156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:14</name>
+      <Point><coordinates>-96.587752,39.193156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:15</name>
+      <Point><coordinates>-96.587775,39.193152</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:16</name>
+      <Point><coordinates>-96.587792,39.193146</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:17</name>
+      <Point><coordinates>-96.587816,39.193138</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:18</name>
+      <Point><coordinates>-96.587834,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:19</name>
+      <Point><coordinates>-96.587852,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:20</name>
+      <Point><coordinates>-96.587872,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:21</name>
+      <Point><coordinates>-96.587889,39.193139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:22</name>
+      <Point><coordinates>-96.587909,39.19314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:23</name>
+      <Point><coordinates>-96.587934,39.193144</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:24</name>
+      <Point><coordinates>-96.587973,39.193148</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:25</name>
+      <Point><coordinates>-96.587982,39.19315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:26</name>
+      <Point><coordinates>-96.588016,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:27</name>
+      <Point><coordinates>-96.588028,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:28</name>
+      <Point><coordinates>-96.588047,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:29</name>
+      <Point><coordinates>-96.588071,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:30</name>
+      <Point><coordinates>-96.588092,39.193147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:31</name>
+      <Point><coordinates>-96.588114,39.193151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:32</name>
+      <Point><coordinates>-96.588136,39.193156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:33</name>
+      <Point><coordinates>-96.588157,39.193157</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:34</name>
+      <Point><coordinates>-96.588179,39.193165</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:35</name>
+      <Point><coordinates>-96.588198,39.193167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:36</name>
+      <Point><coordinates>-96.588222,39.193168</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:37</name>
+      <Point><coordinates>-96.588242,39.193169</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:38</name>
+      <Point><coordinates>-96.588264,39.193172</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:39</name>
+      <Point><coordinates>-96.588283,39.19317</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:40</name>
+      <Point><coordinates>-96.588306,39.193167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:41</name>
+      <Point><coordinates>-96.588324,39.193167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:42</name>
+      <Point><coordinates>-96.588349,39.193171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:43</name>
+      <Point><coordinates>-96.588365,39.193175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:44</name>
+      <Point><coordinates>-96.588386,39.193175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:45</name>
+      <Point><coordinates>-96.588407,39.193178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:46</name>
+      <Point><coordinates>-96.588425,39.193176</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:47</name>
+      <Point><coordinates>-96.588445,39.193172</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:48</name>
+      <Point><coordinates>-96.588463,39.193168</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:49</name>
+      <Point><coordinates>-96.588486,39.193171</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:50</name>
+      <Point><coordinates>-96.588504,39.193164</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:51</name>
+      <Point><coordinates>-96.588523,39.193163</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:52</name>
+      <Point><coordinates>-96.588542,39.193158</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:53</name>
+      <Point><coordinates>-96.588561,39.193156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:54</name>
+      <Point><coordinates>-96.588594,39.193151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:55</name>
+      <Point><coordinates>-96.588608,39.193151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:56</name>
+      <Point><coordinates>-96.588622,39.19315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:57</name>
+      <Point><coordinates>-96.588648,39.19315</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:58</name>
+      <Point><coordinates>-96.58866,39.193147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:58:59</name>
+      <Point><coordinates>-96.588672,39.193144</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:00</name>
+      <Point><coordinates>-96.588695,39.193147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:01</name>
+      <Point><coordinates>-96.588711,39.193145</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:02</name>
+      <Point><coordinates>-96.588737,39.193147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:03</name>
+      <Point><coordinates>-96.588752,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:04</name>
+      <Point><coordinates>-96.588773,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:05</name>
+      <Point><coordinates>-96.588791,39.19314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:06</name>
+      <Point><coordinates>-96.588814,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:07</name>
+      <Point><coordinates>-96.58883,39.193149</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:08</name>
+      <Point><coordinates>-96.58885,39.193153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:09</name>
+      <Point><coordinates>-96.588867,39.193152</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:10</name>
+      <Point><coordinates>-96.588887,39.193156</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:11</name>
+      <Point><coordinates>-96.588906,39.193154</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:12</name>
+      <Point><coordinates>-96.588926,39.193151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:13</name>
+      <Point><coordinates>-96.588942,39.193148</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:14</name>
+      <Point><coordinates>-96.588959,39.193144</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:15</name>
+      <Point><coordinates>-96.588979,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:16</name>
+      <Point><coordinates>-96.588996,39.193147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:17</name>
+      <Point><coordinates>-96.589015,39.193145</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:18</name>
+      <Point><coordinates>-96.589037,39.193144</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:19</name>
+      <Point><coordinates>-96.589055,39.193143</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:20</name>
+      <Point><coordinates>-96.589075,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:21</name>
+      <Point><coordinates>-96.5891,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:22</name>
+      <Point><coordinates>-96.58912,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:23</name>
+      <Point><coordinates>-96.589132,39.193147</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:24</name>
+      <Point><coordinates>-96.589142,39.193143</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:25</name>
+      <Point><coordinates>-96.589151,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:26</name>
+      <Point><coordinates>-96.589162,39.193139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:27</name>
+      <Point><coordinates>-96.589165,39.193139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:28</name>
+      <Point><coordinates>-96.589165,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:29</name>
+      <Point><coordinates>-96.589165,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:30</name>
+      <Point><coordinates>-96.589167,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:31</name>
+      <Point><coordinates>-96.589171,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:32</name>
+      <Point><coordinates>-96.589174,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:33</name>
+      <Point><coordinates>-96.58918,39.193139</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:34</name>
+      <Point><coordinates>-96.589221,39.193138</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:35</name>
+      <Point><coordinates>-96.589233,39.19314</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:36</name>
+      <Point><coordinates>-96.589256,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:37</name>
+      <Point><coordinates>-96.589277,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:38</name>
+      <Point><coordinates>-96.589298,39.193136</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:39</name>
+      <Point><coordinates>-96.589322,39.193133</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:40</name>
+      <Point><coordinates>-96.589342,39.193132</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:41</name>
+      <Point><coordinates>-96.58936,39.193131</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:42</name>
+      <Point><coordinates>-96.589369,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:43</name>
+      <Point><coordinates>-96.589378,39.193142</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:44</name>
+      <Point><coordinates>-96.589375,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:45</name>
+      <Point><coordinates>-96.589375,39.193137</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:46</name>
+      <Point><coordinates>-96.589386,39.193128</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:47</name>
+      <Point><coordinates>-96.589389,39.193119</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:48</name>
+      <Point><coordinates>-96.589387,39.193115</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:49</name>
+      <Point><coordinates>-96.589387,39.193108</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:50</name>
+      <Point><coordinates>-96.589385,39.193103</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:51</name>
+      <Point><coordinates>-96.589383,39.193097</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:52</name>
+      <Point><coordinates>-96.589383,39.193094</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:53</name>
+      <Point><coordinates>-96.589383,39.193094</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:54</name>
+      <Point><coordinates>-96.589386,39.193089</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:55</name>
+      <Point><coordinates>-96.589386,39.193089</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:56</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:57</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:58</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 08:59:59</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:00</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:01</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:02</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:03</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:04</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:05</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:06</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:07</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:08</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:09</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:10</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:11</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:12</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:13</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:14</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:15</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:16</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:17</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:18</name>
+      <Point><coordinates>-96.589388,39.193087</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:19</name>
+      <Point><coordinates>-96.58938,39.193092</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:20</name>
+      <Point><coordinates>-96.589384,39.19308</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:21</name>
+      <Point><coordinates>-96.589385,39.193051</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:22</name>
+      <Point><coordinates>-96.589383,39.193042</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:23</name>
+      <Point><coordinates>-96.589374,39.193023</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:24</name>
+      <Point><coordinates>-96.589376,39.193011</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:25</name>
+      <Point><coordinates>-96.589374,39.192997</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:26</name>
+      <Point><coordinates>-96.58938,39.19298</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:27</name>
+      <Point><coordinates>-96.589383,39.192964</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:28</name>
+      <Point><coordinates>-96.589384,39.192948</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:29</name>
+      <Point><coordinates>-96.589385,39.192919</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:30</name>
+      <Point><coordinates>-96.589387,39.19291</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:31</name>
+      <Point><coordinates>-96.589391,39.192894</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:32</name>
+      <Point><coordinates>-96.589393,39.192878</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:33</name>
+      <Point><coordinates>-96.5894,39.192859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:34</name>
+      <Point><coordinates>-96.589403,39.192847</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:35</name>
+      <Point><coordinates>-96.589406,39.192832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:36</name>
+      <Point><coordinates>-96.589408,39.192815</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:37</name>
+      <Point><coordinates>-96.58941,39.192792</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:38</name>
+      <Point><coordinates>-96.589407,39.192783</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:39</name>
+      <Point><coordinates>-96.589405,39.192775</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:40</name>
+      <Point><coordinates>-96.589402,39.192757</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:41</name>
+      <Point><coordinates>-96.589408,39.192745</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:42</name>
+      <Point><coordinates>-96.589412,39.192719</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:43</name>
+      <Point><coordinates>-96.589415,39.192708</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:44</name>
+      <Point><coordinates>-96.589418,39.192696</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:45</name>
+      <Point><coordinates>-96.589425,39.19268</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:46</name>
+      <Point><coordinates>-96.589429,39.192669</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:47</name>
+      <Point><coordinates>-96.589436,39.192651</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:48</name>
+      <Point><coordinates>-96.589438,39.19264</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:49</name>
+      <Point><coordinates>-96.589442,39.192624</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:50</name>
+      <Point><coordinates>-96.589443,39.192611</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:51</name>
+      <Point><coordinates>-96.589447,39.192596</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:52</name>
+      <Point><coordinates>-96.589454,39.192574</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:53</name>
+      <Point><coordinates>-96.589455,39.192565</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:54</name>
+      <Point><coordinates>-96.589456,39.192556</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:55</name>
+      <Point><coordinates>-96.589462,39.19253</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:56</name>
+      <Point><coordinates>-96.589467,39.192523</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:57</name>
+      <Point><coordinates>-96.589472,39.192516</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:58</name>
+      <Point><coordinates>-96.589483,39.192497</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:00:59</name>
+      <Point><coordinates>-96.589484,39.192487</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:00</name>
+      <Point><coordinates>-96.589485,39.192478</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:01</name>
+      <Point><coordinates>-96.58949,39.192461</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:02</name>
+      <Point><coordinates>-96.589495,39.192452</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:03</name>
+      <Point><coordinates>-96.589494,39.192426</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:04</name>
+      <Point><coordinates>-96.589492,39.192417</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:05</name>
+      <Point><coordinates>-96.589489,39.192409</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:06</name>
+      <Point><coordinates>-96.589473,39.192387</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:07</name>
+      <Point><coordinates>-96.589468,39.192379</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:08</name>
+      <Point><coordinates>-96.589462,39.192372</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:09</name>
+      <Point><coordinates>-96.589455,39.192361</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:10</name>
+      <Point><coordinates>-96.589457,39.192341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:11</name>
+      <Point><coordinates>-96.589456,39.192322</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:12</name>
+      <Point><coordinates>-96.589455,39.192313</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:13</name>
+      <Point><coordinates>-96.589454,39.192304</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:14</name>
+      <Point><coordinates>-96.58946,39.192282</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:15</name>
+      <Point><coordinates>-96.589465,39.192272</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:16</name>
+      <Point><coordinates>-96.589469,39.192262</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:17</name>
+      <Point><coordinates>-96.589473,39.192248</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:18</name>
+      <Point><coordinates>-96.589479,39.19224</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:19</name>
+      <Point><coordinates>-96.589493,39.192234</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:20</name>
+      <Point><coordinates>-96.589516,39.192217</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:21</name>
+      <Point><coordinates>-96.589525,39.192208</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:22</name>
+      <Point><coordinates>-96.589534,39.1922</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:23</name>
+      <Point><coordinates>-96.589545,39.192189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:24</name>
+      <Point><coordinates>-96.589562,39.19218</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:25</name>
+      <Point><coordinates>-96.589568,39.192168</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:26</name>
+      <Point><coordinates>-96.589577,39.192153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:27</name>
+      <Point><coordinates>-96.58957,39.192136</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:28</name>
+      <Point><coordinates>-96.58957,39.192126</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:29</name>
+      <Point><coordinates>-96.589587,39.192111</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:30</name>
+      <Point><coordinates>-96.589599,39.192102</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:31</name>
+      <Point><coordinates>-96.58961,39.192092</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:32</name>
+      <Point><coordinates>-96.589618,39.192084</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:33</name>
+      <Point><coordinates>-96.589622,39.192058</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:34</name>
+      <Point><coordinates>-96.589632,39.19205</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:35</name>
+      <Point><coordinates>-96.589646,39.192036</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:36</name>
+      <Point><coordinates>-96.589662,39.192017</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:37</name>
+      <Point><coordinates>-96.589671,39.19201</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:38</name>
+      <Point><coordinates>-96.58968,39.192003</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:39</name>
+      <Point><coordinates>-96.589693,39.191991</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:40</name>
+      <Point><coordinates>-96.589703,39.19198</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:41</name>
+      <Point><coordinates>-96.589709,39.191967</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:42</name>
+      <Point><coordinates>-96.589711,39.191949</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:43</name>
+      <Point><coordinates>-96.589708,39.191931</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:44</name>
+      <Point><coordinates>-96.589714,39.19192</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:45</name>
+      <Point><coordinates>-96.589726,39.191917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:46</name>
+      <Point><coordinates>-96.589748,39.191906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:47</name>
+      <Point><coordinates>-96.589771,39.191902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:48</name>
+      <Point><coordinates>-96.589788,39.191897</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:49</name>
+      <Point><coordinates>-96.589799,39.191887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:50</name>
+      <Point><coordinates>-96.589813,39.191874</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:51</name>
+      <Point><coordinates>-96.589823,39.191863</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:52</name>
+      <Point><coordinates>-96.589838,39.191849</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:53</name>
+      <Point><coordinates>-96.589855,39.191835</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:54</name>
+      <Point><coordinates>-96.589864,39.19183</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:55</name>
+      <Point><coordinates>-96.589872,39.191825</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:56</name>
+      <Point><coordinates>-96.589886,39.191825</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:57</name>
+      <Point><coordinates>-96.5899,39.191825</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:58</name>
+      <Point><coordinates>-96.589917,39.191824</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:01:59</name>
+      <Point><coordinates>-96.589931,39.19182</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:00</name>
+      <Point><coordinates>-96.589937,39.191817</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:01</name>
+      <Point><coordinates>-96.589943,39.191815</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:02</name>
+      <Point><coordinates>-96.589948,39.191812</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:03</name>
+      <Point><coordinates>-96.589954,39.191809</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:04</name>
+      <Point><coordinates>-96.58996,39.191806</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:05</name>
+      <Point><coordinates>-96.589973,39.191806</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:06</name>
+      <Point><coordinates>-96.58998,39.191804</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:07</name>
+      <Point><coordinates>-96.589987,39.191801</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:08</name>
+      <Point><coordinates>-96.589995,39.191799</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:09</name>
+      <Point><coordinates>-96.590004,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:10</name>
+      <Point><coordinates>-96.590006,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:11</name>
+      <Point><coordinates>-96.590011,39.191799</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:12</name>
+      <Point><coordinates>-96.590009,39.191801</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:13</name>
+      <Point><coordinates>-96.590009,39.191801</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:14</name>
+      <Point><coordinates>-96.590009,39.191801</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:15</name>
+      <Point><coordinates>-96.590009,39.1918</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:16</name>
+      <Point><coordinates>-96.590009,39.1918</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:17</name>
+      <Point><coordinates>-96.590008,39.191799</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:18</name>
+      <Point><coordinates>-96.590008,39.191798</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:19</name>
+      <Point><coordinates>-96.590008,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:20</name>
+      <Point><coordinates>-96.590012,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:21</name>
+      <Point><coordinates>-96.590012,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:22</name>
+      <Point><coordinates>-96.590012,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:23</name>
+      <Point><coordinates>-96.590012,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:24</name>
+      <Point><coordinates>-96.590012,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:25</name>
+      <Point><coordinates>-96.590012,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:26</name>
+      <Point><coordinates>-96.590012,39.191797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:27</name>
+      <Point><coordinates>-96.590019,39.191798</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:28</name>
+      <Point><coordinates>-96.590018,39.191798</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:29</name>
+      <Point><coordinates>-96.590019,39.191798</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:30</name>
+      <Point><coordinates>-96.590022,39.191796</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:31</name>
+      <Point><coordinates>-96.590024,39.19179</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:32</name>
+      <Point><coordinates>-96.590031,39.191789</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:33</name>
+      <Point><coordinates>-96.590035,39.1918</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:34</name>
+      <Point><coordinates>-96.590053,39.191817</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:35</name>
+      <Point><coordinates>-96.590075,39.191832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:36</name>
+      <Point><coordinates>-96.590095,39.191821</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:37</name>
+      <Point><coordinates>-96.590095,39.191814</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:38</name>
+      <Point><coordinates>-96.590074,39.191816</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:02:39</name>
+      <Point><coordinates>-96.590074,39.191816</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:17</name>
+      <Point><coordinates>-96.590173,39.191676</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:18</name>
+      <Point><coordinates>-96.59018,39.191676</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:19</name>
+      <Point><coordinates>-96.590172,39.19167</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:20</name>
+      <Point><coordinates>-96.590142,39.191687</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:21</name>
+      <Point><coordinates>-96.590122,39.191685</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:22</name>
+      <Point><coordinates>-96.590102,39.191674</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:23</name>
+      <Point><coordinates>-96.59009,39.191682</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:24</name>
+      <Point><coordinates>-96.59008,39.191686</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:25</name>
+      <Point><coordinates>-96.59007,39.191689</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:26</name>
+      <Point><coordinates>-96.59006,39.191693</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:27</name>
+      <Point><coordinates>-96.59005,39.191697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:28</name>
+      <Point><coordinates>-96.59004,39.191701</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:29</name>
+      <Point><coordinates>-96.59001,39.191729</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:30</name>
+      <Point><coordinates>-96.589959,39.19175</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:31</name>
+      <Point><coordinates>-96.589932,39.191761</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:32</name>
+      <Point><coordinates>-96.589922,39.191795</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:33</name>
+      <Point><coordinates>-96.589829,39.191796</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:34</name>
+      <Point><coordinates>-96.589808,39.191834</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:35</name>
+      <Point><coordinates>-96.589807,39.191853</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:36</name>
+      <Point><coordinates>-96.589775,39.191862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:37</name>
+      <Point><coordinates>-96.589758,39.191864</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:38</name>
+      <Point><coordinates>-96.589741,39.191866</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:39</name>
+      <Point><coordinates>-96.589728,39.191872</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:40</name>
+      <Point><coordinates>-96.58972,39.191881</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:41</name>
+      <Point><coordinates>-96.589703,39.191883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:42</name>
+      <Point><coordinates>-96.589689,39.191886</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:43</name>
+      <Point><coordinates>-96.589669,39.191884</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:44</name>
+      <Point><coordinates>-96.589643,39.191885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:45</name>
+      <Point><coordinates>-96.589618,39.191886</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:46</name>
+      <Point><coordinates>-96.589597,39.191888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:47</name>
+      <Point><coordinates>-96.589577,39.191886</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:48</name>
+      <Point><coordinates>-96.589561,39.191889</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:49</name>
+      <Point><coordinates>-96.589533,39.19189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:50</name>
+      <Point><coordinates>-96.589522,39.191891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:51</name>
+      <Point><coordinates>-96.589511,39.191891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:52</name>
+      <Point><coordinates>-96.589493,39.19189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:53</name>
+      <Point><coordinates>-96.589476,39.191893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:54</name>
+      <Point><coordinates>-96.589454,39.19189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:55</name>
+      <Point><coordinates>-96.58943,39.191892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:56</name>
+      <Point><coordinates>-96.589404,39.191891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:57</name>
+      <Point><coordinates>-96.58939,39.191892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:58</name>
+      <Point><coordinates>-96.589376,39.191893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:39:59</name>
+      <Point><coordinates>-96.589349,39.191892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:00</name>
+      <Point><coordinates>-96.589336,39.191891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:01</name>
+      <Point><coordinates>-96.589323,39.19189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:02</name>
+      <Point><coordinates>-96.589304,39.191888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:03</name>
+      <Point><coordinates>-96.589287,39.191887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:04</name>
+      <Point><coordinates>-96.589265,39.191885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:05</name>
+      <Point><coordinates>-96.589249,39.191886</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:06</name>
+      <Point><coordinates>-96.589228,39.19189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:07</name>
+      <Point><coordinates>-96.589211,39.191892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:08</name>
+      <Point><coordinates>-96.58919,39.191893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:09</name>
+      <Point><coordinates>-96.589172,39.191893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:10</name>
+      <Point><coordinates>-96.589153,39.191891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:11</name>
+      <Point><coordinates>-96.589132,39.191889</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:12</name>
+      <Point><coordinates>-96.589116,39.19189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:13</name>
+      <Point><coordinates>-96.589097,39.191897</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:14</name>
+      <Point><coordinates>-96.589075,39.191901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:15</name>
+      <Point><coordinates>-96.589063,39.191907</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:16</name>
+      <Point><coordinates>-96.589042,39.191906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:17</name>
+      <Point><coordinates>-96.589024,39.191905</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:18</name>
+      <Point><coordinates>-96.589008,39.191898</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:19</name>
+      <Point><coordinates>-96.589002,39.191897</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:20</name>
+      <Point><coordinates>-96.588997,39.191896</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:21</name>
+      <Point><coordinates>-96.588991,39.191895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:22</name>
+      <Point><coordinates>-96.588986,39.191894</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:23</name>
+      <Point><coordinates>-96.58898,39.191893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:24</name>
+      <Point><coordinates>-96.588961,39.191893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:25</name>
+      <Point><coordinates>-96.588936,39.191893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:26</name>
+      <Point><coordinates>-96.588912,39.191894</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:27</name>
+      <Point><coordinates>-96.588893,39.1919</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:28</name>
+      <Point><coordinates>-96.588857,39.191912</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:29</name>
+      <Point><coordinates>-96.588847,39.191916</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:30</name>
+      <Point><coordinates>-96.588839,39.191933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:31</name>
+      <Point><coordinates>-96.588837,39.191948</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:32</name>
+      <Point><coordinates>-96.588837,39.191967</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:33</name>
+      <Point><coordinates>-96.588845,39.191983</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:34</name>
+      <Point><coordinates>-96.588848,39.192001</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:35</name>
+      <Point><coordinates>-96.588848,39.192014</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:36</name>
+      <Point><coordinates>-96.588845,39.192031</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:37</name>
+      <Point><coordinates>-96.588845,39.192046</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:38</name>
+      <Point><coordinates>-96.588846,39.192062</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:39</name>
+      <Point><coordinates>-96.588844,39.192075</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:40</name>
+      <Point><coordinates>-96.588848,39.192091</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:41</name>
+      <Point><coordinates>-96.588849,39.192104</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:42</name>
+      <Point><coordinates>-96.588847,39.19212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:43</name>
+      <Point><coordinates>-96.588848,39.192134</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:44</name>
+      <Point><coordinates>-96.588838,39.192151</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:45</name>
+      <Point><coordinates>-96.588841,39.192164</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:46</name>
+      <Point><coordinates>-96.588849,39.192182</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:47</name>
+      <Point><coordinates>-96.588847,39.192195</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:48</name>
+      <Point><coordinates>-96.58885,39.192212</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:49</name>
+      <Point><coordinates>-96.588852,39.192228</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:50</name>
+      <Point><coordinates>-96.588857,39.192244</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:51</name>
+      <Point><coordinates>-96.588859,39.19226</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:52</name>
+      <Point><coordinates>-96.58886,39.192273</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:53</name>
+      <Point><coordinates>-96.58886,39.192287</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:54</name>
+      <Point><coordinates>-96.58886,39.192309</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:55</name>
+      <Point><coordinates>-96.58886,39.192319</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:56</name>
+      <Point><coordinates>-96.58886,39.192329</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:57</name>
+      <Point><coordinates>-96.588859,39.192358</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:58</name>
+      <Point><coordinates>-96.588859,39.192368</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:40:59</name>
+      <Point><coordinates>-96.588858,39.192386</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:00</name>
+      <Point><coordinates>-96.588867,39.192403</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:01</name>
+      <Point><coordinates>-96.588863,39.19243</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:02</name>
+      <Point><coordinates>-96.588862,39.192439</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:03</name>
+      <Point><coordinates>-96.588863,39.192455</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:04</name>
+      <Point><coordinates>-96.588865,39.192473</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:05</name>
+      <Point><coordinates>-96.588866,39.192489</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:06</name>
+      <Point><coordinates>-96.588868,39.192507</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:07</name>
+      <Point><coordinates>-96.588862,39.192536</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:08</name>
+      <Point><coordinates>-96.588862,39.192545</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:09</name>
+      <Point><coordinates>-96.588862,39.192558</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:10</name>
+      <Point><coordinates>-96.588861,39.192572</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:11</name>
+      <Point><coordinates>-96.588858,39.192587</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:12</name>
+      <Point><coordinates>-96.588857,39.192602</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:13</name>
+      <Point><coordinates>-96.588856,39.192625</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:14</name>
+      <Point><coordinates>-96.588856,39.192635</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:15</name>
+      <Point><coordinates>-96.588856,39.192645</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:16</name>
+      <Point><coordinates>-96.58886,39.192666</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:17</name>
+      <Point><coordinates>-96.58886,39.192675</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:18</name>
+      <Point><coordinates>-96.588861,39.192684</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:19</name>
+      <Point><coordinates>-96.588861,39.192705</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:20</name>
+      <Point><coordinates>-96.588861,39.192713</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:21</name>
+      <Point><coordinates>-96.588861,39.192721</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:22</name>
+      <Point><coordinates>-96.58886,39.192743</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:23</name>
+      <Point><coordinates>-96.588862,39.192752</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:24</name>
+      <Point><coordinates>-96.588864,39.192762</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:25</name>
+      <Point><coordinates>-96.588859,39.192775</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:26</name>
+      <Point><coordinates>-96.588857,39.19279</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:27</name>
+      <Point><coordinates>-96.588857,39.192805</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:28</name>
+      <Point><coordinates>-96.588856,39.192821</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:29</name>
+      <Point><coordinates>-96.58885,39.192839</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:30</name>
+      <Point><coordinates>-96.588847,39.192851</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:31</name>
+      <Point><coordinates>-96.588837,39.192862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:32</name>
+      <Point><coordinates>-96.588827,39.192875</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:33</name>
+      <Point><coordinates>-96.588813,39.192883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:34</name>
+      <Point><coordinates>-96.588795,39.19289</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:35</name>
+      <Point><coordinates>-96.588773,39.192887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:36</name>
+      <Point><coordinates>-96.588749,39.192887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:37</name>
+      <Point><coordinates>-96.588728,39.19289</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:38</name>
+      <Point><coordinates>-96.588713,39.192888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:39</name>
+      <Point><coordinates>-96.588693,39.192888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:40</name>
+      <Point><coordinates>-96.58867,39.192888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:41</name>
+      <Point><coordinates>-96.588632,39.192886</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:42</name>
+      <Point><coordinates>-96.58862,39.192886</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:43</name>
+      <Point><coordinates>-96.5886,39.192892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:44</name>
+      <Point><coordinates>-96.588578,39.192892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:45</name>
+      <Point><coordinates>-96.588558,39.192896</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:46</name>
+      <Point><coordinates>-96.58854,39.1929</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:47</name>
+      <Point><coordinates>-96.588519,39.192903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:48</name>
+      <Point><coordinates>-96.588503,39.192903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:49</name>
+      <Point><coordinates>-96.588486,39.192906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:50</name>
+      <Point><coordinates>-96.588465,39.192906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:51</name>
+      <Point><coordinates>-96.588436,39.192908</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:52</name>
+      <Point><coordinates>-96.588424,39.192909</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:53</name>
+      <Point><coordinates>-96.588411,39.192909</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:54</name>
+      <Point><coordinates>-96.588391,39.192913</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:55</name>
+      <Point><coordinates>-96.588374,39.192913</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:56</name>
+      <Point><coordinates>-96.588353,39.192912</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:57</name>
+      <Point><coordinates>-96.588339,39.192914</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:58</name>
+      <Point><coordinates>-96.588322,39.192916</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:41:59</name>
+      <Point><coordinates>-96.588299,39.192922</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:00</name>
+      <Point><coordinates>-96.588273,39.192922</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:01</name>
+      <Point><coordinates>-96.588261,39.192922</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:02</name>
+      <Point><coordinates>-96.588249,39.192921</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:03</name>
+      <Point><coordinates>-96.588232,39.192919</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:04</name>
+      <Point><coordinates>-96.588214,39.192916</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:05</name>
+      <Point><coordinates>-96.588185,39.192915</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:06</name>
+      <Point><coordinates>-96.588174,39.192915</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:07</name>
+      <Point><coordinates>-96.588163,39.192915</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:08</name>
+      <Point><coordinates>-96.588149,39.192914</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:09</name>
+      <Point><coordinates>-96.588138,39.192912</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:10</name>
+      <Point><coordinates>-96.588128,39.192908</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:11</name>
+      <Point><coordinates>-96.588105,39.1929</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:12</name>
+      <Point><coordinates>-96.588092,39.192899</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:13</name>
+      <Point><coordinates>-96.58808,39.192897</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:14</name>
+      <Point><coordinates>-96.588058,39.19289</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:15</name>
+      <Point><coordinates>-96.588047,39.192889</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:16</name>
+      <Point><coordinates>-96.588035,39.192888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:17</name>
+      <Point><coordinates>-96.588006,39.192887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:18</name>
+      <Point><coordinates>-96.58799,39.192887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:19</name>
+      <Point><coordinates>-96.587971,39.192885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:20</name>
+      <Point><coordinates>-96.587951,39.192887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:21</name>
+      <Point><coordinates>-96.587932,39.192885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:22</name>
+      <Point><coordinates>-96.58792,39.19288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:23</name>
+      <Point><coordinates>-96.587909,39.192876</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:24</name>
+      <Point><coordinates>-96.587894,39.192873</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:25</name>
+      <Point><coordinates>-96.587878,39.192873</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:26</name>
+      <Point><coordinates>-96.587864,39.192871</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:27</name>
+      <Point><coordinates>-96.587821,39.192867</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:28</name>
+      <Point><coordinates>-96.587807,39.192867</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:29</name>
+      <Point><coordinates>-96.587788,39.192868</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:30</name>
+      <Point><coordinates>-96.587763,39.192873</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:31</name>
+      <Point><coordinates>-96.587742,39.192871</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:32</name>
+      <Point><coordinates>-96.587722,39.192866</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:33</name>
+      <Point><coordinates>-96.587685,39.192862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:34</name>
+      <Point><coordinates>-96.587672,39.192862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:35</name>
+      <Point><coordinates>-96.587652,39.192865</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:36</name>
+      <Point><coordinates>-96.587628,39.192868</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:37</name>
+      <Point><coordinates>-96.587609,39.192873</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:38</name>
+      <Point><coordinates>-96.587586,39.192877</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:39</name>
+      <Point><coordinates>-96.587547,39.19288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:40</name>
+      <Point><coordinates>-96.587536,39.192882</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:41</name>
+      <Point><coordinates>-96.587512,39.192888</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:42</name>
+      <Point><coordinates>-96.587497,39.19289</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:43</name>
+      <Point><coordinates>-96.587474,39.192891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:44</name>
+      <Point><coordinates>-96.587454,39.192892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:45</name>
+      <Point><coordinates>-96.587411,39.192895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:46</name>
+      <Point><coordinates>-96.587396,39.192897</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:47</name>
+      <Point><coordinates>-96.587361,39.192895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:48</name>
+      <Point><coordinates>-96.587348,39.192895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:49</name>
+      <Point><coordinates>-96.587313,39.192896</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:50</name>
+      <Point><coordinates>-96.587301,39.192895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:51</name>
+      <Point><coordinates>-96.587266,39.192903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:52</name>
+      <Point><coordinates>-96.587255,39.192906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:53</name>
+      <Point><coordinates>-96.587234,39.192906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:54</name>
+      <Point><coordinates>-96.58721,39.192902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:55</name>
+      <Point><coordinates>-96.587188,39.192901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:56</name>
+      <Point><coordinates>-96.587165,39.192901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:57</name>
+      <Point><coordinates>-96.587143,39.192901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:58</name>
+      <Point><coordinates>-96.587121,39.192902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:42:59</name>
+      <Point><coordinates>-96.5871,39.192904</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:00</name>
+      <Point><coordinates>-96.587077,39.192905</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:01</name>
+      <Point><coordinates>-96.587055,39.192903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:02</name>
+      <Point><coordinates>-96.587034,39.192902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:03</name>
+      <Point><coordinates>-96.587017,39.192902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:04</name>
+      <Point><coordinates>-96.586999,39.192899</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:05</name>
+      <Point><coordinates>-96.586977,39.192899</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:06</name>
+      <Point><coordinates>-96.586956,39.192901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:07</name>
+      <Point><coordinates>-96.586927,39.192901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:08</name>
+      <Point><coordinates>-96.586915,39.192903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:09</name>
+      <Point><coordinates>-96.586903,39.192905</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:10</name>
+      <Point><coordinates>-96.586877,39.192901</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:11</name>
+      <Point><coordinates>-96.586865,39.192902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:12</name>
+      <Point><coordinates>-96.586852,39.192902</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:13</name>
+      <Point><coordinates>-96.586827,39.1929</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:14</name>
+      <Point><coordinates>-96.586808,39.192895</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:15</name>
+      <Point><coordinates>-96.586787,39.192892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:16</name>
+      <Point><coordinates>-96.586769,39.192894</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:17</name>
+      <Point><coordinates>-96.586748,39.192897</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:18</name>
+      <Point><coordinates>-96.586729,39.1929</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:19</name>
+      <Point><coordinates>-96.586711,39.192898</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:20</name>
+      <Point><coordinates>-96.586692,39.192892</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:21</name>
+      <Point><coordinates>-96.586676,39.192887</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:22</name>
+      <Point><coordinates>-96.586656,39.192885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:23</name>
+      <Point><coordinates>-96.586635,39.192881</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:24</name>
+      <Point><coordinates>-96.586621,39.192876</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:25</name>
+      <Point><coordinates>-96.586596,39.192865</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:26</name>
+      <Point><coordinates>-96.586584,39.19286</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:27</name>
+      <Point><coordinates>-96.586572,39.192855</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:28</name>
+      <Point><coordinates>-96.586557,39.192845</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:29</name>
+      <Point><coordinates>-96.58654,39.19284</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:30</name>
+      <Point><coordinates>-96.586513,39.192836</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:31</name>
+      <Point><coordinates>-96.586501,39.192835</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:32</name>
+      <Point><coordinates>-96.586488,39.192834</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:33</name>
+      <Point><coordinates>-96.586469,39.192835</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:34</name>
+      <Point><coordinates>-96.586452,39.192834</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:35</name>
+      <Point><coordinates>-96.586424,39.192832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:36</name>
+      <Point><coordinates>-96.586413,39.192832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:37</name>
+      <Point><coordinates>-96.586403,39.192832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:38</name>
+      <Point><coordinates>-96.586386,39.192836</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:39</name>
+      <Point><coordinates>-96.586367,39.192839</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:40</name>
+      <Point><coordinates>-96.586351,39.192844</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:41</name>
+      <Point><coordinates>-96.586338,39.192843</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:42</name>
+      <Point><coordinates>-96.586322,39.192845</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:43</name>
+      <Point><coordinates>-96.586291,39.192845</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:44</name>
+      <Point><coordinates>-96.586277,39.192846</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:45</name>
+      <Point><coordinates>-96.586264,39.192848</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:46</name>
+      <Point><coordinates>-96.586236,39.192851</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:47</name>
+      <Point><coordinates>-96.586225,39.192851</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:48</name>
+      <Point><coordinates>-96.586215,39.192851</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:49</name>
+      <Point><coordinates>-96.586198,39.192851</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:50</name>
+      <Point><coordinates>-96.586179,39.192854</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:51</name>
+      <Point><coordinates>-96.586159,39.192857</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:52</name>
+      <Point><coordinates>-96.586141,39.192862</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:53</name>
+      <Point><coordinates>-96.586122,39.192865</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:54</name>
+      <Point><coordinates>-96.586103,39.192868</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:55</name>
+      <Point><coordinates>-96.586086,39.19287</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:56</name>
+      <Point><coordinates>-96.58606,39.192871</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:57</name>
+      <Point><coordinates>-96.586022,39.192874</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:58</name>
+      <Point><coordinates>-96.58601,39.192877</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:43:59</name>
+      <Point><coordinates>-96.585989,39.19288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:00</name>
+      <Point><coordinates>-96.585967,39.192882</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:01</name>
+      <Point><coordinates>-96.585951,39.192883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:02</name>
+      <Point><coordinates>-96.585926,39.192885</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:03</name>
+      <Point><coordinates>-96.585884,39.192884</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:04</name>
+      <Point><coordinates>-96.585869,39.192882</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:05</name>
+      <Point><coordinates>-96.585828,39.192881</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:06</name>
+      <Point><coordinates>-96.585812,39.19288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:07</name>
+      <Point><coordinates>-96.585792,39.192879</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:08</name>
+      <Point><coordinates>-96.585767,39.19288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:09</name>
+      <Point><coordinates>-96.58573,39.192883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:10</name>
+      <Point><coordinates>-96.585715,39.192883</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:11</name>
+      <Point><coordinates>-96.585693,39.192879</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:12</name>
+      <Point><coordinates>-96.585673,39.192873</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:13</name>
+      <Point><coordinates>-96.585657,39.192867</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:14</name>
+      <Point><coordinates>-96.585639,39.192858</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:15</name>
+      <Point><coordinates>-96.585623,39.192852</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:16</name>
+      <Point><coordinates>-96.585611,39.19285</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:17</name>
+      <Point><coordinates>-96.585608,39.192852</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:18</name>
+      <Point><coordinates>-96.58561,39.192853</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:19</name>
+      <Point><coordinates>-96.58561,39.192853</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:20</name>
+      <Point><coordinates>-96.585605,39.192854</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:21</name>
+      <Point><coordinates>-96.585598,39.192855</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:22</name>
+      <Point><coordinates>-96.585583,39.192859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:23</name>
+      <Point><coordinates>-96.585574,39.192863</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:24</name>
+      <Point><coordinates>-96.585565,39.192866</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:25</name>
+      <Point><coordinates>-96.585557,39.19287</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:26</name>
+      <Point><coordinates>-96.585548,39.192874</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:27</name>
+      <Point><coordinates>-96.585508,39.19288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:28</name>
+      <Point><coordinates>-96.585497,39.192881</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:29</name>
+      <Point><coordinates>-96.585476,39.192884</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:30</name>
+      <Point><coordinates>-96.585453,39.192889</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:31</name>
+      <Point><coordinates>-96.585433,39.192893</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:32</name>
+      <Point><coordinates>-96.585415,39.192897</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:33</name>
+      <Point><coordinates>-96.585394,39.192903</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:34</name>
+      <Point><coordinates>-96.58538,39.192908</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:35</name>
+      <Point><coordinates>-96.585366,39.192915</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:36</name>
+      <Point><coordinates>-96.58535,39.192927</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:37</name>
+      <Point><coordinates>-96.585341,39.192933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:38</name>
+      <Point><coordinates>-96.585334,39.192941</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:39</name>
+      <Point><coordinates>-96.585338,39.192935</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:40</name>
+      <Point><coordinates>-96.585337,39.192933</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:41</name>
+      <Point><coordinates>-96.585338,39.192935</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:42</name>
+      <Point><coordinates>-96.585336,39.192939</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:43</name>
+      <Point><coordinates>-96.585333,39.192954</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:44</name>
+      <Point><coordinates>-96.585335,39.192972</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:45</name>
+      <Point><coordinates>-96.585333,39.192986</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:46</name>
+      <Point><coordinates>-96.585332,39.193004</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:47</name>
+      <Point><coordinates>-96.585337,39.193018</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:48</name>
+      <Point><coordinates>-96.585335,39.193032</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:49</name>
+      <Point><coordinates>-96.585334,39.193045</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:50</name>
+      <Point><coordinates>-96.585333,39.193066</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:51</name>
+      <Point><coordinates>-96.585334,39.193076</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:52</name>
+      <Point><coordinates>-96.585334,39.193086</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:53</name>
+      <Point><coordinates>-96.585332,39.193101</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:54</name>
+      <Point><coordinates>-96.585324,39.193112</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:55</name>
+      <Point><coordinates>-96.585318,39.193127</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:56</name>
+      <Point><coordinates>-96.585305,39.193141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:57</name>
+      <Point><coordinates>-96.585287,39.193158</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:58</name>
+      <Point><coordinates>-96.58528,39.193166</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:44:59</name>
+      <Point><coordinates>-96.585272,39.193173</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:00</name>
+      <Point><coordinates>-96.585268,39.19318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:01</name>
+      <Point><coordinates>-96.585255,39.193189</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:02</name>
+      <Point><coordinates>-96.585246,39.1932</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:03</name>
+      <Point><coordinates>-96.585232,39.193214</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:04</name>
+      <Point><coordinates>-96.585224,39.193223</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:05</name>
+      <Point><coordinates>-96.585216,39.193232</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:06</name>
+      <Point><coordinates>-96.585201,39.193251</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:07</name>
+      <Point><coordinates>-96.585195,39.19326</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:08</name>
+      <Point><coordinates>-96.585189,39.193278</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:09</name>
+      <Point><coordinates>-96.585185,39.193288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:10</name>
+      <Point><coordinates>-96.585177,39.193303</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:11</name>
+      <Point><coordinates>-96.585174,39.193311</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:12</name>
+      <Point><coordinates>-96.58517,39.193318</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:13</name>
+      <Point><coordinates>-96.585166,39.193326</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:14</name>
+      <Point><coordinates>-96.585158,39.193334</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:15</name>
+      <Point><coordinates>-96.585152,39.193343</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:16</name>
+      <Point><coordinates>-96.585157,39.193359</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:17</name>
+      <Point><coordinates>-96.585148,39.193369</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:18</name>
+      <Point><coordinates>-96.585143,39.193385</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:19</name>
+      <Point><coordinates>-96.585137,39.193402</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:20</name>
+      <Point><coordinates>-96.585129,39.193416</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:21</name>
+      <Point><coordinates>-96.585124,39.193435</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:22</name>
+      <Point><coordinates>-96.585122,39.193444</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:23</name>
+      <Point><coordinates>-96.58512,39.193453</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:25</name>
+      <Point><coordinates>-96.585113,39.193469</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:26</name>
+      <Point><coordinates>-96.585107,39.193482</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:38</name>
+      <Point><coordinates>-96.584749,39.19335</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:44</name>
+      <Point><coordinates>-96.584585,39.193284</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:45</name>
+      <Point><coordinates>-96.584609,39.193245</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:54</name>
+      <Point><coordinates>-96.584388,39.193153</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:55</name>
+      <Point><coordinates>-96.584414,39.193238</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:45:56</name>
+      <Point><coordinates>-96.584417,39.193247</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:46:02</name>
+      <Point><coordinates>-96.584341,39.193262</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>2024-02-07 09:46:08</name>
+      <Point><coordinates>-96.584287,39.19324</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

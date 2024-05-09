@@ -1,0 +1,12 @@
+h1:activity-1---morning-walk Activity 1 - Morning walk
+h2:libraries Libraries
+h2:data Data
+h2:visualize-map Visualize map
+h2:write-kml Write kml
+h2:visualize-lat-lon Visualize lat lon
+h3:polynomial 1. Polynomial
+h3:gam---low-rank-gaussian-process 2. GAM - low rank gaussian process
+h3:regression-tree 3. Regression tree
+h2:visualize-all Visualize all
+h3:comments 4. Comments
+

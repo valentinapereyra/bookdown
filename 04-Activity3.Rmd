@@ -1,0 +1,369 @@
+
+# Activity 3
+
+## Libraries
+```{r message=FALSE, warning=FALSE}
+library(sf)
+library(sp)
+library(raster)
+library(mgcv)
+library(plotrix)
+library(gstat)
+library(tidyverse)
+```
+
+## English grain Aphid Data
+
+```{r message=FALSE, warning=FALSE}
+url <- "https://www.dropbox.com/scl/fi/9ymxt900s77uq50ca6dgc/Enders-et-al.-2018-data.csv?rlkey=0rxjwleenhgu0gvzow5p0x9xf&dl=1"
+df1 <- read.csv(url)
+df1 <- df1[,c(2,8:10)] # Keep only the data on English grain aphid
+hist(df1$EGA)
+```
+
+## Kansas
+
+```{r message=FALSE, warning=FALSE}
+# Download shapefile of Kansas from census.gov
+download.file("http://www2.census.gov/geo/tiger/GENZ2015/shp/cb_2015_us_state_20m.zip", destfile = "states.zip")
+unzip("states.zip")
+sf.us <- st_read("cb_2015_us_state_20m.shp",quiet = TRUE)
+sf.kansas <- sf.us[48,6]
+sf.kansas <- as(sf.kansas, 'Spatial')
+plot(sf.kansas,main="",col="white")
+```
+
+# Spatial DF
+
+```{r message=FALSE, warning=FALSE}
+# Make SpatialPoints data frame
+pts.sample <- data.frame(long = df1$long, lat = df1$lat, 
+                         count = df1$EGA)
+coordinates(pts.sample) =~ long + lat
+proj4string(pts.sample) <- CRS("+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
+
+```
+
+# Viz count
+
+```{r message=FALSE, warning=FALSE}
+# Plot counts of Bird cherry-oat aphid
+par(mar=c(5.1, 4.1, 4.1, 8.1), xpd=TRUE)
+plot(sf.kansas,main="Abundance of English Grain Aphid")
+points(pts.sample[,1],col=rgb(0.4,0.8,0.5,0.9),pch=ifelse(pts.sample$count>0,20,4),cex=pts.sample$count/50+0.5)
+legend("right",inset=c(-0.25,0),legend = c(0,1,10,20,40,60), bty = "n", text.col = "black", 
+       pch=c(4,20,20,20,20,20), cex=1.3,pt.cex=c(0,1,10,20,40,60)/50+0.5,col=rgb(0.4,0.8,0.5,0.9))
+# Maximum observed: 940 individuals
+```
+
+## Land Cover data
+
+```{r message=FALSE, warning=FALSE}
+# Download National Land Cover Database
+#url.nlcd <- "https://www.dropbox.com/scl/fi/ew7yzm93aes7l8l37cn65/KS_2011_NLCD.img?rlkey=60ahyvxhq18gt0yr47tuq5fig&dl=1"
+#rl.nlcd2011 <- raster(url.nlcd)
+#saveRDS(rl.nlcd2011, "rl.nlcd2011.RDS")
+
+rl.nlcd2011 <- readRDS("../rl.nlcd2011.RDS")
+plot(rl.nlcd2011)
+```
+
+## Raster w grassland
+
+```{r message=FALSE, warning=FALSE}
+# Make raster file that contains pixels with value of 1 if grassland and 
+# zero if other type of land cover.
+# NLCD legend can be found here: https://www.mrlc.gov/data/legends/national-land-cover-database-2011-nlcd2011-legend
+#rl.nlcd.grass <- rl.nlcd2011
+#rl.nlcd.grass[] <- ifelse(rl.nlcd.grass[]==71,1,0)
+
+#saveRDS(rl.nlcd.grass, "rl.nlcd.grass.RDS")
+
+rl.nlcd.grass <- readRDS("../rl.nlcd.grass.RDS")
+
+plot(rl.nlcd.grass)
+```
+
+# Grassland within 5 km of sampling
+
+```{r message=FALSE, warning=FALSE}
+# Calculate percentage of land area that is grassland withing 5 km of sampled location
+df1$grass.perc <- unlist(lapply(raster::extract(rl.nlcd.grass,pts.sample,buffer=5000),mean))*100
+
+hist(df1$grass.perc,col="grey",main="",xlab="% grassland within \n5 km at sample location")
+```
+
+# Run models
+
+```{r message=FALSE, warning=FALSE}
+sample = sample(c(TRUE,FALSE), nrow(df1), replace=TRUE, prob=c(0.6,0.4)) 
+train = df1[sample,]
+test = df1[!sample,]
+
+# Fit different spatio-temporal models to Bird cherry-oat aphid abundance data 
+m1 <- gam(EGA ~ grass.perc + as.factor(year) + s(long,lat, bs = "gp"), 
+          family = poisson(link = "log"), data = train)
+summary(m1)
+
+m2 <- gam(EGA ~ grass.perc + as.factor(year) + s(long,lat, bs = "gp"), 
+          family = nb(theta = NULL,link = "log"), data = train)
+summary(m2)
+
+m3 <- gam(list(EGA ~ grass.perc + as.factor(year) + s(long,lat, bs = "gp"), ~ grass.perc), 
+          family = ziplss(), data = train)
+summary(m3)
+
+m4 <- gam(EGA ~ grass.perc + as.factor(year) + s(long,lat, bs = "gp"), 
+          family = gaussian(link="identity"), data = train)
+summary(m4)
+```
+
+# Statistical model
+
+**Model 1:**\
+$Z=y_i$ where i is the year and goes from 2014 and 2015.\
+\
+$[y_i|\lambda]=Poisson(\lambda)]$\
+\
+$E(y_i)=e^{\beta_0+\beta1 \cdot X+\eta_s+\eta_t}$\
+\
+$\eta_s \sim MVN(0,\Sigma)$\ 
+\
+**Model 2:**\
+$Z=y_i$ where i is the year and goes from 2014 and 2015.\
+\
+$[y_i|r,p]=NB(r,p)]$\
+\
+$E(y_i)=e^{\beta_0+\beta1 \cdot X+\eta_s+\eta_t}$\
+\
+$\eta_s \sim MVN(0,\Sigma)$\ 
+\
+**Model 3:**\
+$Z=y_i$ where i is the year and goes from 2014 and 2015.\
+\
+$[y_i|\pi,\lambda]=ZIP(\pi,\lambda)]$\
+\
+$P(Y=0)=\pi+(1-\pi)e^{-\lambda}$\
+\
+$P(Y=y_i)=(1-\pi)\cfrac{\lambda^{y_i}e^{-\lambda}}{y_i}$\
+\
+$E(y_i)=e^{\beta_0+\beta1 \cdot X+\eta_s+\eta_t}$\
+\
+$\eta_s \sim MVN(0,\Sigma)$\ 
+\
+**Model 3:**\
+$Z=y_i$ where i is the year and goes from 2014 and 2015.\
+\
+$[y_i|\mu, \sigma^2]=Gaussian(\mu,\sigma^2)]$\
+\
+$E(y_i)=e^{\beta_0+\beta1 \cdot X+\eta_s+\eta_t}$\
+\
+$\eta_s \sim MVN(0,\Sigma)$\ 
+
+
+```{r message=FALSE, warning=FALSE}
+# Examine regression coefficient estimates and 95% CI
+beta.1.hat <- c(coef(m1)[2],coef(m2)[2],coef(m3)[2],coef(m4)[2])
+beta.1.hat # order is m1, m2 and m3
+exp(beta.1.hat[1:3]*0)/exp(beta.1.hat[1:3]*100) # Abundance at 0% grassland/Abundance at 100% grassland
+
+ucl <- c(confint.default(m1,parm="grass.perc")[2],
+         confint.default(m2,parm="grass.perc")[2],
+         confint.default(m3,parm="grass.perc")[2],
+         confint.default(m4,parm="grass.perc")[2])
+
+lcl <- c(confint.default(m1,parm="grass.perc")[1],
+         confint.default(m2,parm="grass.perc")[1],
+         confint.default(m3,parm="grass.perc")[1],
+         confint.default(m4,parm="grass.perc")[1])
+
+par(mar=c(4,7,1,1))
+plotCI(c(1:4), beta.1.hat, ui=ucl, li=lcl,pch=20,xaxt="n",xlab="",ylab="Estimated regression coefficient \n (% grass within 5km)")
+lines(c(1,4),c(0,0),col="gold",lwd=3)
+axis(at=c(1:4),lab=c("Pois","NB","ZIP", "gauss"),side=1)
+# NB non-significant coefficient
+# Pois and ZIP coefficient different from 0
+
+```
+
+## Compare models
+
+```{r message=FALSE, warning=FALSE}
+# Compare models using AIC (see pgs. 284-286 in Wikle et al. 2019)
+AIC(m1,m2,m3,m4)
+```
+
+### Concurvity
+
+```{r}
+# Model checking
+# See pg. 164 of Wikle et al. (2019) or 
+# Hodges and Reich 2010 (https://www4.stat.ncsu.edu/~bjreich/papers/FixedEffectsYouLove.pdf)
+concurvity(m1)
+concurvity(m2)
+concurvity(m3)
+concurvity(m4)
+```
+
+## Semivariogram for corr resids
+
+```{r message=FALSE, warning=FALSE}
+# Semivariogram to check for spatial autocorrelation among
+# residuals (see pg. 267 in Wikle et al. 2019 or
+# Wood 2017 pg. 364 Generalized additive models: an introduction with R)
+vg1 <- variogram(residuals.gam(m1, type = "response") ~ 1, loc = ~long +
+                  lat, data = train)
+plot(vg1)
+
+vg2 <- variogram(residuals.gam(m2, type = "response") ~ 1, loc = ~long +
+                  lat, data = train)
+plot(vg2)
+
+vg3 <- variogram(residuals.gam(m3, type = "response") ~ 1, loc = ~long +
+                  lat, data = train)
+plot(vg3)
+
+vg4 <- variogram(residuals.gam(m4, type = "response") ~ 1, loc = ~long +
+                  lat, data = train)
+plot(vg4)
+```
+
+# Model checking / comparison
+
+```{r message=FALSE, warning=FALSE}
+E.y.m1 <- predict(m1,newdata=test,type = 'response')
+sum(dnorm(test$EGA,E.y.m1,log=TRUE))
+mean((test$EGA - E.y.m1)^2) # Mean square error
+mean(abs(test$EGA - E.y.m1)) # Mean absolute error
+plot(E.y.m1,test$EGA,xlab="Predicted expected value",ylab="New observed number of aphids")
+
+E.y.m2 <- predict(m2,newdata=test,type = 'response')
+sum(dnorm(test$EGA,E.y.m1,log=TRUE))
+mean((test$EGA - E.y.m2)^2) # Mean square error
+mean(abs(test$EGA - E.y.m2)) # Mean absolute error
+plot(E.y.m2,test$EGA,xlab="Predicted expected value",ylab="New observed number of aphids")
+
+E.y.m3 <- predict(m3,newdata=test,type = 'response')
+sum(dnorm(test$EGA,E.y.m1,log=TRUE))
+mean((test$EGA - E.y.m3)^2) # Mean square error
+mean(abs(test$EGA - E.y.m3)) # Mean absolute error
+plot(E.y.m3,test$EGA,xlab="Predicted expected value",ylab="New observed number of aphids")
+
+E.y.m4 <- predict(m4,newdata=test,type = 'response')
+sum(dnorm(test$EGA,E.y.m4,log=TRUE))
+mean((test$EGA - E.y.m4)^2) # Mean square error
+mean(abs(test$EGA - E.y.m4)) # Mean absolute error
+plot(E.y.m4,test$EGA,xlab="Predicted expected value",ylab="New observed number of aphids")
+
+```
+
+## Predictions in space
+
+```{r message=FALSE, warning=FALSE}
+newPoints <- st_sample(sf.kansas %>% st_as_sf(), size = 1000, type = "regular") %>% 
+  as(., 'Spatial') %>% as.data.frame() %>% 
+    rename("long" = "coords.x1", 
+           "lat" = "coords.x2") %>% 
+  cross_join(data.frame(year = as.factor(c('2014', '2015'))))
+
+pts.sample <- newPoints
+
+coordinates(pts.sample) =~ long + lat
+proj4string(pts.sample) <- CRS("+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0")
+
+# Calculate percentage of land area that is grassland withing 5 km of new points location
+newPoints$grass.perc <- unlist(lapply(raster::extract(rl.nlcd.grass,pts.sample,buffer=5000),mean))*100
+
+# Step 2: obtain predictions
+newPoints$pred.m1 <- predict(m1, newdata = newPoints, type = "response")
+newPoints$pred.m2 <- predict(m2, newdata = newPoints, type = "response")
+newPoints$pred.m3 <- predict(m3, newdata = newPoints, type = "response")
+newPoints$pred.m4 <- predict(m4, newdata = newPoints, type = "response")
+```
+
+```{r message=FALSE, warning=FALSE, fig.height=5 ,fig.width=12}
+# Model 1
+ggplot() +
+  geom_tile(data = newPoints %>% filter(pred.m1 < 2000), aes(x = long, y = lat, fill = pred.m1))+
+  labs(title = "Model 1: Abundance of English grain aphids", x = "Longitude", y = "Latitude")+
+  scale_fill_viridis_c(option = "D", alpha = 0.95)+
+  theme(legend.background = element_rect(fill = "transparent", colour = NA),
+        panel.grid = element_blank(),
+        plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "lines"),
+        panel.background = element_rect(fill = "grey90"),
+        axis.text = element_text(size = 12), 
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.text = element_text(size = 11, face = "bold"),
+        title = element_text(size = 12, face = "bold"),
+        axis.title = element_text(size = 14))+
+  facet_wrap(~year) +
+  geom_point(data = df1, aes(x = long, y = lat, size = EGA), color = "white", shape = 21) 
+```
+
+```{r message=FALSE, warning=FALSE, fig.height=5 , fig.width=12}
+# Model 2
+ggplot() +
+  geom_tile(data = newPoints, aes(x = long, y = lat, fill = pred.m2))+
+  labs(title = "Model 2: Abundance of English grain aphids", x = "Longitude", y = "Latitude")+
+  scale_fill_viridis_c(option = "D", alpha = 0.95)+
+  theme(legend.background = element_rect(fill = "transparent", colour = NA),
+        panel.grid = element_blank(),
+        plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "lines"),
+        panel.background = element_rect(fill = "grey90"),
+        axis.text = element_text(size = 12), 
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.text = element_text(size = 11, face = "bold"),
+        title = element_text(size = 12, face = "bold"),
+        axis.title = element_text(size = 14))+
+  facet_wrap(~year) +
+  geom_point(data = df1, aes(x = long, y = lat, size = EGA), color = "white", shape = 21) 
+```
+
+```{r message=FALSE, warning=FALSE, fig.height=5 , fig.width=12}
+# Model 3
+ggplot() +
+  geom_tile(data = newPoints %>% filter(pred.m3 < 1000), aes(x = long, y = lat, fill = pred.m3))+
+  labs(title = "Model 3: Abundance of English grain aphids", x = "Longitude", y = "Latitude")+
+  scale_fill_viridis_c(option = "D", alpha = 0.95)+
+  theme(legend.background = element_rect(fill = "transparent", colour = NA),
+        panel.grid = element_blank(),
+        plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "lines"),
+        panel.background = element_rect(fill = "grey90"),
+        axis.text = element_text(size = 12), 
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.text = element_text(size = 11, face = "bold"),
+        title = element_text(size = 12, face = "bold"),
+        axis.title = element_text(size = 14))+
+  facet_wrap(~year) +
+  geom_point(data = df1, aes(x = long, y = lat, size = EGA), color = "white", shape = 21) 
+```
+
+```{r message=FALSE, warning=FALSE, fig.height=5 , fig.width=12}
+# Model 4
+ggplot() +
+  geom_tile(data = newPoints, aes(x = long, y = lat, fill = pred.m4))+
+  labs(title = "Model 4: Abundance of English grain aphids", x = "Longitude", y = "Latitude")+
+  scale_fill_viridis_c(option = "D", alpha = 0.95)+
+  theme(legend.background = element_rect(fill = "transparent", colour = NA),
+        panel.grid = element_blank(),
+        plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "lines"),
+        panel.background = element_rect(fill = "grey90"),
+        axis.text = element_text(size = 12), 
+        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        strip.text = element_text(size = 11, face = "bold"),
+        title = element_text(size = 12, face = "bold"),
+        axis.title = element_text(size = 14))+
+  facet_wrap(~year) +
+  geom_point(data = df1, aes(x = long, y = lat, size = EGA), color = "white", shape = 21) 
+```
+
+
+### Summary
+
+The model with the most accurate prediction is the negative binomial in the 1st place (MAE = 23 English Grain Aphid), and the gaussian in the 2nd place(MAE = 37 English Grain Aphid). In real world terms, however, the gaussian distribution assumes continuous observations in all the range of numbers ($\overset{+}{\_} \infty$) which does not correlate with count data (positive integers). In addition, when we predict the number of aphids for Kansas, the poisson and the zero inflated poisson estimate extreme high values in the north west region.
+
+
+
+
+
+

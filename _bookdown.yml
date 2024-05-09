@@ -1,0 +1,5 @@
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: ""
+rmd_files: ["index.Rmd", "01-Journal_STAT764.Rmd", "02-Activity1.Rmd", "03-Activity2.Rmd", "04-Activity3.Rmd"]
