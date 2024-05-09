@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Axis labels: name correctly for showing a histogram: is a pdf, is not a count, is density, in hist(freq = F).  | STAT 764 - Spring 2023</title>
+  <meta name="description" content="<p>This is a bookdown project containing the daily journals of STAT 764,
+and the activities 1, 2, and 3 at the end of the document.</p>" />
+  <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Axis labels: name correctly for showing a histogram: is a pdf, is not a count, is density, in hist(freq = F).  | STAT 764 - Spring 2023" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a bookdown project containing the daily journals of STAT 764,
+and the activities 1, 2, and 3 at the end of the document.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Axis labels: name correctly for showing a histogram: is a pdf, is not a count, is density, in hist(freq = F).  | STAT 764 - Spring 2023" />
+  
+  <meta name="twitter:description" content="<p>This is a bookdown project containing the daily journals of STAT 764,
+and the activities 1, 2, and 3 at the end of the document.</p>" />
+  
+
+<meta name="author" content="Valentina M. Pereyra Picabea" />
+
+
+<meta name="date" content="2024-05-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="daily-journals.html"/>
+<link rel="next" href="math-model-review.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">STAT 764 - Valentina Pereyra</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html"><i class="fa fa-check"></i><b>1</b> Activity 1 - Morning walk</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#libraries"><i class="fa fa-check"></i><b>1.1</b> Libraries</a></li>
+<li class="chapter" data-level="1.2" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#data"><i class="fa fa-check"></i><b>1.2</b> Data</a></li>
+<li class="chapter" data-level="1.3" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#visualize-map"><i class="fa fa-check"></i><b>1.3</b> Visualize map</a></li>
+<li class="chapter" data-level="1.4" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#write-kml"><i class="fa fa-check"></i><b>1.4</b> Write kml</a></li>
+<li class="chapter" data-level="1.5" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#visualize-lat-lon"><i class="fa fa-check"></i><b>1.5</b> Visualize lat lon</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#polynomial"><i class="fa fa-check"></i><b>1.5.1</b> 1. Polynomial</a></li>
+<li class="chapter" data-level="1.5.2" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#gam---low-rank-gaussian-process"><i class="fa fa-check"></i><b>1.5.2</b> 2. GAM - low rank gaussian process</a></li>
+<li class="chapter" data-level="1.5.3" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#regression-tree"><i class="fa fa-check"></i><b>1.5.3</b> 3. Regression tree</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#visualize-all"><i class="fa fa-check"></i><b>1.6</b> Visualize all</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="activity-1---morning-walk.html"><a href="activity-1---morning-walk.html#comments"><i class="fa fa-check"></i><b>1.6.1</b> 4. Comments</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><i class="fa fa-check"></i><b>2</b> Elevation data of Experiment plot in North Agronomy Farm</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#librarires"><i class="fa fa-check"></i><b>2.1</b> Librarires</a></li>
+<li class="chapter" data-level="2.2" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#kansas-boundary"><i class="fa fa-check"></i><b>2.2</b> Kansas boundary</a></li>
+<li class="chapter" data-level="2.3" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#my-data-north-agronomy-farm"><i class="fa fa-check"></i><b>2.3</b> My data: North Agronomy Farm</a></li>
+<li class="chapter" data-level="2.4" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#extract-elevation"><i class="fa fa-check"></i><b>2.4</b> Extract elevation</a></li>
+<li class="chapter" data-level="2.5" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#visualize-boundary-elevation"><i class="fa fa-check"></i><b>2.5</b> Visualize boundary + elevation</a></li>
+<li class="chapter" data-level="2.6" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#models"><i class="fa fa-check"></i><b>2.6</b> Models</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#linear-with-iid-errors"><i class="fa fa-check"></i><b>2.6.1</b> 1. Linear with iid errors</a></li>
+<li class="chapter" data-level="2.6.2" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#gam"><i class="fa fa-check"></i><b>2.6.2</b> 2. GAM</a></li>
+<li class="chapter" data-level="2.6.3" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#regression-tree-1"><i class="fa fa-check"></i><b>2.6.3</b> 3. Regression tree</a></li>
+<li class="chapter" data-level="2.6.4" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#support-vector-regression"><i class="fa fa-check"></i><b>2.6.4</b> 4. Support vector regression</a></li>
+<li class="chapter" data-level="2.6.5" data-path="elevation-data-of-experiment-plot-in-north-agronomy-farm.html"><a href="elevation-data-of-experiment-plot-in-north-agronomy-farm.html#boosted-regession-tree"><i class="fa fa-check"></i><b>2.6.5</b> 5. Boosted regession tree</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="libraries-1.html"><a href="libraries-1.html"><i class="fa fa-check"></i><b>3</b> Libraries</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="libraries-1.html"><a href="libraries-1.html#kansas"><i class="fa fa-check"></i><b>3.1</b> Kansas</a></li>
+<li class="chapter" data-level="3.2" data-path="libraries-1.html"><a href="libraries-1.html#land-cover-data"><i class="fa fa-check"></i><b>3.2</b> Land Cover data</a></li>
+<li class="chapter" data-level="3.3" data-path="libraries-1.html"><a href="libraries-1.html#raster-w-grassland"><i class="fa fa-check"></i><b>3.3</b> Raster w grassland</a></li>
+<li class="chapter" data-level="3.4" data-path="libraries-1.html"><a href="libraries-1.html#compare-models"><i class="fa fa-check"></i><b>3.4</b> Compare models</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="libraries-1.html"><a href="libraries-1.html#concurvity"><i class="fa fa-check"></i><b>3.4.1</b> Concurvity</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="libraries-1.html"><a href="libraries-1.html#semivariogram-for-corr-resids"><i class="fa fa-check"></i><b>3.5</b> Semivariogram for corr resids</a></li>
+<li class="chapter" data-level="3.6" data-path="libraries-1.html"><a href="libraries-1.html#predictions-in-space"><i class="fa fa-check"></i><b>3.6</b> Predictions in space</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="libraries-1.html"><a href="libraries-1.html#summary"><i class="fa fa-check"></i><b>3.6.1</b> Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="daily-journals.html"><a href="daily-journals.html"><i class="fa fa-check"></i><b>4</b> Daily journals</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="daily-journals.html"><a href="daily-journals.html#january-18"><i class="fa fa-check"></i><b>4.1</b> January 18</a></li>
+<li class="chapter" data-level="4.2" data-path="daily-journals.html"><a href="daily-journals.html#january-25"><i class="fa fa-check"></i><b>4.2</b> January 25</a></li>
+<li class="chapter" data-level="4.3" data-path="daily-journals.html"><a href="daily-journals.html#january-30"><i class="fa fa-check"></i><b>4.3</b> January 30</a></li>
+<li class="chapter" data-level="4.4" data-path="daily-journals.html"><a href="daily-journals.html#february-1"><i class="fa fa-check"></i><b>4.4</b> February 1</a></li>
+<li class="chapter" data-level="4.5" data-path="daily-journals.html"><a href="daily-journals.html#february-6"><i class="fa fa-check"></i><b>4.5</b> February 6</a></li>
+</ul></li>
+<li><a href="axis-labels-name-correctly-for-showing-a-histogram-is-a-pdf-is-not-a-count-is-density-in-histfreq-f..html#axis-labels-name-correctly-for-showing-a-histogram-is-a-pdf-is-not-a-count-is-density-in-histfreq-f." id="toc-axis-labels-name-correctly-for-showing-a-histogram-is-a-pdf-is-not-a-count-is-density-in-histfreq-f."><span class="toc-section-number">5</span> Axis labels: name correctly for showing a histogram: is a pdf, is not a count, is density, in hist(freq = F).<br />
+</a></li>
+<li class="chapter" data-level="6" data-path="math-model-review.html"><a href="math-model-review.html"><i class="fa fa-check"></i><b>6</b> Math model review</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="math-model-review.html"><a href="math-model-review.html#february-8"><i class="fa fa-check"></i><b>6.1</b> February 8</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="math-model-review.html"><a href="math-model-review.html#cleaned"><i class="fa fa-check"></i><b>6.1.1</b> Cleaned</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="math-model-review.html"><a href="math-model-review.html#februrart-13"><i class="fa fa-check"></i><b>6.2</b> Februrart 13</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="math-model-review.html"><a href="math-model-review.html#cleaned-1"><i class="fa fa-check"></i><b>6.2.1</b> Cleaned</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="math-model-review.html"><a href="math-model-review.html#february-15"><i class="fa fa-check"></i><b>6.3</b> February 15</a></li>
+<li class="chapter" data-level="6.4" data-path="math-model-review.html"><a href="math-model-review.html#february-20"><i class="fa fa-check"></i><b>6.4</b> February 20</a></li>
+<li class="chapter" data-level="6.5" data-path="math-model-review.html"><a href="math-model-review.html#february-22"><i class="fa fa-check"></i><b>6.5</b> February 22</a></li>
+<li class="chapter" data-level="6.6" data-path="math-model-review.html"><a href="math-model-review.html#february-27"><i class="fa fa-check"></i><b>6.6</b> February 27</a></li>
+<li class="chapter" data-level="6.7" data-path="math-model-review.html"><a href="math-model-review.html#february-29"><i class="fa fa-check"></i><b>6.7</b> February 29</a></li>
+<li class="chapter" data-level="6.8" data-path="math-model-review.html"><a href="math-model-review.html#march-7"><i class="fa fa-check"></i><b>6.8</b> March 7</a></li>
+<li class="chapter" data-level="6.9" data-path="math-model-review.html"><a href="math-model-review.html#march-19"><i class="fa fa-check"></i><b>6.9</b> March 19</a></li>
+<li class="chapter" data-level="6.10" data-path="math-model-review.html"><a href="math-model-review.html#march-21"><i class="fa fa-check"></i><b>6.10</b> March 21</a></li>
+<li class="chapter" data-level="6.11" data-path="math-model-review.html"><a href="math-model-review.html#march-26"><i class="fa fa-check"></i><b>6.11</b> March 26</a></li>
+<li class="chapter" data-level="6.12" data-path="math-model-review.html"><a href="math-model-review.html#march-28"><i class="fa fa-check"></i><b>6.12</b> March 28</a></li>
+<li class="chapter" data-level="6.13" data-path="math-model-review.html"><a href="math-model-review.html#april-2"><i class="fa fa-check"></i><b>6.13</b> April 2</a></li>
+<li class="chapter" data-level="6.14" data-path="math-model-review.html"><a href="math-model-review.html#april-4"><i class="fa fa-check"></i><b>6.14</b> April 4</a></li>
+<li class="chapter" data-level="6.15" data-path="math-model-review.html"><a href="math-model-review.html#april-11"><i class="fa fa-check"></i><b>6.15</b> April 11</a></li>
+<li class="chapter" data-level="6.16" data-path="math-model-review.html"><a href="math-model-review.html#april-16"><i class="fa fa-check"></i><b>6.16</b> April 16</a></li>
+<li class="chapter" data-level="6.17" data-path="math-model-review.html"><a href="math-model-review.html#april-18"><i class="fa fa-check"></i><b>6.17</b> April 18</a></li>
+<li class="chapter" data-level="6.18" data-path="math-model-review.html"><a href="math-model-review.html#april-23"><i class="fa fa-check"></i><b>6.18</b> April 23</a></li>
+<li class="chapter" data-level="6.19" data-path="math-model-review.html"><a href="math-model-review.html#april-30"><i class="fa fa-check"></i><b>6.19</b> April 30</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STAT 764 - Spring 2023</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="axis-labels-name-correctly-for-showing-a-histogram-is-a-pdf-is-not-a-count-is-density-in-histfreq-f." class="section level1 hasAnchor" number="5">
+<h1 class="hasAnchor"><span class="header-section-number">5</span> Axis labels: name correctly for showing a histogram: is a pdf, is not a count, is density, in hist(freq = F).<br />
+<a href="axis-labels-name-correctly-for-showing-a-histogram-is-a-pdf-is-not-a-count-is-density-in-histfreq-f..html#axis-labels-name-correctly-for-showing-a-histogram-is-a-pdf-is-not-a-count-is-density-in-histfreq-f." class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><br />
+Name a distribution pdf, name its moments: should be basic skills.<br />
+<br />
+# Maximum likelihood estimation: estimate parameters from a statistical model, the best ever, works well in most situation, sucks only at small sample size.<br />
+least squares: not pdf associated, just a mathematical function.<br />
+<br />
+<em>MLE: unbiased estimates, many times we want biased estimates (why we would like biased estimates?, ask this in the journal)</em><br />
+<br />
+See STATS package from R for more information.<br />
+<br />
+Other distributions:<br />
+tweedy distribution? for rain<br />
+<br />
+We can make our own functions for a PDF: see web.<br />
+<br />
+# Moments of a distirbution:</p>
+<p>-First moment: expected value<br />
+-Second central moment: variance<br />
+-Third moment: skewness<br />
+</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="daily-journals.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="math-model-review.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/Journal_STAT764.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
